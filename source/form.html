@@ -7,6 +7,75 @@
 </head>
 
 <body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Mishka">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--basket">
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <button class="page-header__button-hamburger" type="button"></button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">
+      Вязание на заказ
+    </h1>
+    <p class="page-main__description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+      уточнить детали.
+    </p>
+    <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Тип</legend>
+        <input class="filter-form__radio-button" type="radio" name="radio-button" value="acsessuares" id="toggle-one" checked>
+        <label class="filter-form__label" for="toggle-one">Аксессуар для интерьера</label>
+        <input class="filter-form__radio-button" type="radio" name="radio-button" value="toys" id="toggle-two">
+        <label class="filter-form__label" for="toggle-two">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Цвет</legend>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-one" value="white" id="checkbox-one" checked>
+          <label class="filter-form__label" for="checkbox-one">Белый</label>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-two" value="white" id="checkbox-two" checked>
+          <label class="filter-form__label" for="checkbox-two">Серый</label>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-three" value="white" id="checkbox-three">
+          <label class="filter-form__label" for="checkbox-three">Тиффани</label>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-four" value="white" id="checkbox-four">
+          <label class="filter-form__label" for="checkbox-four">Черный</label>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-five" value="white" id="checkbox-five">
+          <label class="filter-form__label" for="checkbox-five">Розовый</label>
+          <input class="filter-form__checkbox" type="checkbox" name="checkbox-six" value="white" id="checkbox-six">
+          <label class="filter-form__label" for="checkbox-six">Оранжевый</label>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
 
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+
+      </fieldset>
+
+    </form>
+
+  </main>
 </body>
+
 </html>

@@ -55,7 +55,7 @@
       </table>
       <img class="week-product__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фотография товара">
       <p calss="week-product__price">Цена: 990 руб.</p>
-      <a class="week-product__button button" href="#">
+      <a class="button week-product__button" href="#">
         Заказать
       </a>
     </section>
@@ -65,62 +65,64 @@
       </h2>
       <ul class="about__list">
         <li class="about__item about__item--eco">
-          <p>Экологически чистые материалы</p>
+          <p class="about__text">Экологически чистые материалы</p>
         </li>
         <li class="about__item about__item--scandinavian">
           <p>Скандинавский стиль по российской цене</p>
         </li>
         <li class="about__item about__item--like">
-          <p>Увеличивает лайки на фотографиях</p>
+          <p class="about__text">Увеличивает лайки на фотографиях</p>
         </li>
         <li class="about__item about__item--handmade">
-          <p>Связано вручную с любовью и умилением</p>
+          <p class="about__text">Связано вручную с любовью и умилением</p>
         </li>
         <li class="about__item about__item--prodaction">
-          <p>Поддержка отечественного производителя</p>
+          <p class="about__text">Поддержка отечественного производителя</p>
         </li>
         <li class="about__item about__item--gift">
-          <p>Поставляется в подарочной упаковке</p>
+          <p class="about__text">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <div class="reviews__item">
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+    <section class="review-group">
+      <h2 class="review-group__title">Отзывы</h2>
+      <div class="review">
+        <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как у популярных инстамамочек.
           В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
           набирают больше лайков!</p>
-        <p class="reviews_autor">Анастасия Красильникова</p>
-        <p class="review__email">
+        <p class="review__autor">Анастасия Красильникова</p>
+        <a class="review__link" href="#">
           @misssssiskras
-        </p>
+        </a>
       </div>
-      <div class="reviews__pagination">
-        <button class="reviews__button reviews__button--previous" type="button">НАЗАД</button>
-        <button class="reviews__button reviews__button--next" type="button">ВПЕРЕД</button>
+      <div class="review__pagination">
+        <button class="review__button review__button--previous" type="button">НАЗАД</button>
+        <button class="review__button review__button--next" type="button">ВПЕРЕД</button>
       </div>
-      <a class="reviews__write button" href="#">
+      <a class="button review__write" href="#">
         Написать
       </a>
     </section>
-    <section class="contacts">
-      <h2 class="contacts__title">
+    <section class="contact">
+      <h2 class="contact__title">
         Контакты
       </h2>
-      <table class="contacts__info">
-        <tr>
-          <td class="contacts__email">e-mail</td>
-          <td class="contacts__email-link"><a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-        </tr>
-        <tr>
-          <td class="contacts__address">адрес</td>
-          <td class="contacts__address-text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19.8, офис 101</td>
-        </tr>
-      </table>
+      <div class="contact__info">
+        <ul class="contact__list">
+          <li class="contact__item">
+            <p class="contact__email">e-mail</p>
+            <p class="contact__email contact__email--text"><a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+          </li>
+          <li class="contact__item">
+            <p class="contact__address">адрес</p>
+            <p class="contact__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19.8, офис 101</p>
+            </li>
+        </ul>
+        </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615957386!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1538231880557"
-        width="600" height="450" frameborder="0"  allowfullscreen></iframe>
-      <a class="contacts__write button" href="#">Напишите нам</a>
+        width="600" height="450"  allowfullscreen></iframe>
+      <a class="button contact__write" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -147,8 +149,6 @@
       </a>
     </div>
   </footer>
-
-
 </body>
 
 </html>

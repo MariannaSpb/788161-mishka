@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Mishka">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item main-nav__item--search">
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--basket">
+          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <button class="page-header__button-hamburger" type="button"></button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">
+      Вязание на заказ
+    </h1>
+    <p class="page-main__description">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
+    <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Тип</legend>
+        <input class="filter-form__radio-button" type="radio" name="type" value="acsessuares" id="toggle-1" checked>
+        <label class="filter-form__label" for="toggle-one">Аксессуар для интерьера</label>
+        <input class="filter-form__radio-button" type="radio" name="type" value="toys" id="toggle-2">
+        <label class="filter-form__label" for="toggle-two">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Цвет</legend>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="white" id="checkbox-1" checked>
+        <label class="filter-form__label" for="checkbox-one">Белый</label>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="gray" id="checkbox-2" checked>
+        <label class="filter-form__label" for="checkbox-two">Серый</label>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="tiffany" id="checkbox-3">
+        <label class="filter-form__label" for="checkbox-three">Тиффани</label>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="black" id="checkbox-4">
+        <label class="filter-form__label" for="checkbox-four">Черный</label>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="pink" id="checkbox-5">
+        <label class="filter-form__label" for="checkbox-five">Розовый</label>
+        <input class="filter-form__checkbox" type="checkbox" name="color" value="orange" id="checkbox-6">
+        <label class="filter-form__label" for="checkbox-six">Оранжевый</label>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">ФИО</legend>
+        <label class="filter-form__label" for="name">Имя:</label>
+        <input class="filter-form__user-name" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" required>
+        <label class="filter-form__label" for="surname">Фамилия:</label>
+        <input class="filter-form__user-surname" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" required>
+        <label class="filter-form__label" for="patronymic">Отчество:</label>
+        <input class="filter-form__user-patronymic" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Тел</legend>
+        <label class="filter-form__label" for="phone">Тел</label>
+        <input class="filter-form__user-phone" type="tel" name="user-phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">E-mail</legend>
+        <label class="filter-form__label" for="email">E-mail</label>
+        <input class="filter-form__user-email" type="email" name="user-email" id="email" placeholder="Ваш Email*" required>
+      </fieldset>
+      <fieldset class="filter-form__fieldset">
+        <legend class="filter-form__legend">Доп</legend>
+        <label class="visually-hidden" for="wishes">Доп</label>
+        <textarea class="filter-form__user-wishes" name="user-wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </fieldset>
+      <p class="filter-form__required">
+        *Поля обязательны для заполнения
+      </p>
+      <button class="button filter-form__button" type="submit">Отправить заказ</button>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy/" target="_blank">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy/" target="_blank">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social-list__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__title">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <img class="img-logo" src="img/htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

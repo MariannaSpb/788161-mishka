@@ -1,0 +1,36 @@
+.page-main {
+  width: 320px;
+}
+
+// .page-main__menu {
+//   display: block;
+//   text-decoration: none;
+//   list-style: none;
+// }
+
+.page-main__item {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+
+  &--light-green {
+    background-color: #63d1bb;
+  }
+
+  &--dark-green {
+    background-color: #56c3b2;
+  }
+}
+
+.page-main__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__link {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 108px;
+}

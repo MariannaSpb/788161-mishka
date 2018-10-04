@@ -1,0 +1,31 @@
+.review__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.review__autor {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.review__link {
+  margin: 0;
+  font-size: 17px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.review__pagination {
+  display: flex;
+}
+
+.review__button {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  width: 130px;
+  height: 53px;
+}

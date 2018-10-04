@@ -1,1 +1,99 @@
+.about {
+  color: #000000;
+  padding: 0 30px;
+  outline: 1px solid;
+}
 
+.about__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // font-size: 17px;
+  // line-height: 20px;
+  // font-weight: 700;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__item {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 83px;
+
+  &--eco::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 37px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--scandinavian::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 27px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 27px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--prodaction::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 23px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 36px;
+    left: 8px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}

@@ -20,6 +20,35 @@
   font-size: 17px;
   line-height: 24px;
   display: block;
+  text-align: center;
   padding: 26px;
   border-top: 1px solid #ececec;
+}
+
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &--search::before {
+    content: "";
+    background-image: url("../img/icon-search.svg");
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 41px;
+    top: 29px;
+    opacity: 0.2;
+  }
+
+  &--basket::before {
+    content: "";
+    background-image: url("../img/icon-cart.svg");
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 37px;
+    top: 29px;
+    opacity: 0.2;
+  }
 }

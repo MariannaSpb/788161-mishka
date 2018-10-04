@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var replace = require('gulp-replace-task');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -14,6 +15,17 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(replace({
+      patterns: [{
+      match: /}(?=\n[^\n}])/g,
+      replacement: '}\n'
+      },
+      {
+      match: / }/g,
+      replacement: '}\n'
+      }],
+      usePrefix: false
+      }))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });

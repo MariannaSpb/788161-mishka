@@ -1,0 +1,27 @@
+.page-header {
+  position: relative;
+  width: 320px;
+  background-color: white;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
+}
+
+.page-header__button-hamburger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+}
+
+.hamburger {
+  background: url(../img/icon-menu-open.svg) no-repeat #ffffff;
+  width: 21px;
+  height: 20px;
+
+}

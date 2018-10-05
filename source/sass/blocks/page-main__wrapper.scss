@@ -1,11 +1,14 @@
 .page-main__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-
+  justify-content: space-between;
+  height: 400px;
   background-color: #fbfbfb;
   border-top: 1px solid #ececec;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-size: 373px;
+  background-size: 320px 373px;
   outline: 1px solid;
 }
 

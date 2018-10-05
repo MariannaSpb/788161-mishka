@@ -1,0 +1,28 @@
+.contact {
+  color: #000000;
+  padding: 0 30px;
+  outline: 1px solid;
+}
+
+.contact__title {
+  margin: 0;
+}
+
+.contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact__item {
+  display: flex;
+}
+
+.contact__email,
+.contact__address {
+  margin-right: 10px;
+}
+
+.email-link {
+  color: #444444;
+}

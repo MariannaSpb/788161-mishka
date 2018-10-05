@@ -22,12 +22,35 @@
   }
 }
 
+.page-main__item--light-green::after {
+  position: absolute;
+  content: "";
+  left: 241px;
+  bottom: 67px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 62px;
+}
+
+.page-main__item--dark-green::after {
+  position: absolute;
+  content: "";
+  left: 197px;
+  bottom: 3px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 62px;
+}
+
 .page-main__menu {
   margin: 0;
   padding: 0;
 }
 
 .page-main__link {
+  position: relative;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;

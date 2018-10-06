@@ -31,43 +31,61 @@
     </nav>
   </header>
   <main class="page-main">
+      <div class="header-block">
     <h1 class="page-main__title">
       Вязание на заказ
     </h1>
-    <p class="page-main__description">
+    </div>
+    <p class="form__description">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
     <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-form__fieldset">
         <legend class="filter-form__legend">Тип</legend>
+        <div class="radio-wrapper">
         <input class="filter-form__radio-button" type="radio" name="type" value="acsessuares" id="toggle-1" checked>
         <label class="filter-form__label" for="toggle-one">Аксессуар для интерьера</label>
+        </div>
+        <div class="radio-wrapper">
         <input class="filter-form__radio-button" type="radio" name="type" value="toys" id="toggle-2">
         <label class="filter-form__label" for="toggle-two">Детская игрушка</label>
+        </div>
       </fieldset>
       <fieldset class="filter-form__fieldset">
         <legend class="filter-form__legend">Цвет</legend>
+        <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="white" id="checkbox-1" checked>
         <label class="filter-form__label" for="checkbox-one">Белый</label>
+      </div>
+      <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="gray" id="checkbox-2" checked>
         <label class="filter-form__label" for="checkbox-two">Серый</label>
+        </div>
+        <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="tiffany" id="checkbox-3">
         <label class="filter-form__label" for="checkbox-three">Тиффани</label>
+        </div>
+        <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="black" id="checkbox-4">
         <label class="filter-form__label" for="checkbox-four">Черный</label>
+        </div>
+        <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="pink" id="checkbox-5">
         <label class="filter-form__label" for="checkbox-five">Розовый</label>
+        </div>
+        <div class="checkbox-wrapper">
         <input class="filter-form__checkbox" type="checkbox" name="color" value="orange" id="checkbox-6">
         <label class="filter-form__label" for="checkbox-six">Оранжевый</label>
+        </div>
       </fieldset>
       <fieldset class="filter-form__fieldset">
         <legend class="filter-form__legend">ФИО</legend>
         <label class="filter-form__label" for="name">Имя:</label>
-        <input class="filter-form__user-name" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" required>
+        <input class="filter-form__text" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" required>
         <label class="filter-form__label" for="surname">Фамилия:</label>
-        <input class="filter-form__user-surname" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" required>
+        <input class="filter-form__text" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" required>
         <label class="filter-form__label" for="patronymic">Отчество:</label>
-        <input class="filter-form__user-patronymic" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете">
+        <input class="filter-form__text" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="filter-form__fieldset">
         <legend class="filter-form__legend">Тел</legend>

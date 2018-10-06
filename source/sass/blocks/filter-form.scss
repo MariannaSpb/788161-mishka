@@ -1,0 +1,25 @@
+.form__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-form {
+  padding: 0 30px;
+}
+
+.filter-form__fieldset {
+  display: flex;
+
+  border: none;
+}
+
+.filter-form__text,
+.filter-form__user-email,
+.filter-form__user-phone {
+  border: none;
+  border-bottom: 2px solid black;
+}

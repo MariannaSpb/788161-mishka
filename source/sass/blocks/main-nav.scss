@@ -39,16 +39,18 @@
     left: 41px;
     top: 29px;
     opacity: 0.2;
+    background-repeat: no-repeat;
   }
 
   &--basket::before {
     content: "";
     background-image: url("../img/icon-cart.svg");
     position: absolute;
-    width: 18px;
+    width: 20px;
     height: 18px;
     left: 37px;
     top: 29px;
     opacity: 0.2;
+    background-repeat: no-repeat;
   }
 }

@@ -52,7 +52,7 @@
   border: 2px solid;
 }
 
-.filter-form__checkbox + label::after {
+.filter-form__checkbox:checked + label::after {
   position: absolute;
   content: "";
   width: 32px;

@@ -18,6 +18,13 @@
   display: flex;
 }
 
+.contact__map {
+  height: 457px;
+  width: 320px;
+  margin: 0 -30px;
+  overflow: hidden;
+}
+
 .contact__email,
 .contact__address {
   margin-right: 10px;

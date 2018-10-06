@@ -29,14 +29,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 83px;
+  margin-bottom: 57px;
+  padding-top: 64px;
 
   &--eco::before {
     content: "";
     position: absolute;
     width: 32px;
     height: 37px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
@@ -47,7 +48,7 @@
     position: absolute;
     width: 46px;
     height: 27px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
@@ -58,7 +59,7 @@
     position: absolute;
     width: 33px;
     height: 27px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
@@ -69,7 +70,7 @@
     position: absolute;
     width: 34px;
     height: 34px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
@@ -80,7 +81,7 @@
     position: absolute;
     width: 54px;
     height: 23px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
@@ -91,7 +92,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    top: 36px;
+    top: 16px;
     left: 8px;
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;

@@ -13,13 +13,88 @@
 
 .filter-form__fieldset {
   display: flex;
-
+  padding: 0;
   border: none;
+  border-top: 1px solid #62d1ba;
 }
 
 .filter-form__text,
 .filter-form__user-email,
 .filter-form__user-phone {
   border: none;
+  margin-bottom: 22px;
   border-bottom: 2px solid black;
+}
+
+.filter-form__legend {
+  color: #62d1ba;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  padding-bottom: 26px;
+}
+
+.filter-form__label {
+  color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-bottom: 26px;
+}
+
+
+.filter-form__checkbox + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+}
+
+.filter-form__checkbox + label::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form__radio-button + label::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  left: 54px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+
+.filter-form__radio-button:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+
+.checkbox-wrapper,
+.radio-wrapper {
+  padding-bottom: 26px;
+}
+
+.filter-form__user-wishes {
+  width: 260px;
+  border: 2px solid;
+}
+
+.filter-form__required {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
 }

@@ -1,16 +1,16 @@
 .main-nav {
-  width: 320px;
   margin: 0;
   padding: 0;
+  width: 320px;
   list-style: none;
 }
 
 .main-nav__list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .main-nav__link {
@@ -32,25 +32,25 @@
 
   &--search::before {
     content: "";
-    background-image: url("../img/icon-search.svg");
     position: absolute;
-    width: 18px;
-    height: 18px;
     left: 41px;
     top: 29px;
-    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
+    opacity: 0.2;
   }
 
   &--basket::before {
     content: "";
-    background-image: url("../img/icon-cart.svg");
     position: absolute;
-    width: 20px;
-    height: 18px;
     left: 37px;
     top: 29px;
-    opacity: 0.2;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
+    opacity: 0.2;
   }
 }

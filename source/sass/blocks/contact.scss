@@ -1,6 +1,6 @@
 .contact {
-  color: #000000;
   padding: 0 30px;
+  color: #000000;
   outline: 1px solid;
 }
 
@@ -9,9 +9,9 @@
 }
 
 .contact__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .contact__item {
@@ -19,9 +19,9 @@
 }
 
 .contact__map {
+  margin: 0 -30px;
   height: 457px;
   width: 320px;
-  margin: 0 -30px;
   overflow: hidden;
 }
 

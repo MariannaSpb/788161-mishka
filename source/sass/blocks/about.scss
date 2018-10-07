@@ -1,6 +1,6 @@
 .about {
-  color: #000000;
   padding: 0 30px;
+  color: #000000;
   outline: 1px solid;
 }
 
@@ -15,9 +15,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  // font-size: 17px;
-  // line-height: 20px;
-  // font-weight: 700;
 }
 
 .about__text {
@@ -26,19 +23,19 @@
 
 .about__item {
   position: relative;
+  margin-bottom: 57px;
+  padding-top: 64px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 57px;
-  padding-top: 64px;
 
   &--eco::before {
     content: "";
     position: absolute;
-    width: 32px;
-    height: 37px;
     top: 16px;
     left: 8px;
+    width: 32px;
+    height: 37px;
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
   }
@@ -46,10 +43,10 @@
   &--scandinavian::before {
     content: "";
     position: absolute;
-    width: 46px;
-    height: 27px;
     top: 16px;
     left: 8px;
+    width: 46px;
+    height: 27px;
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
   }
@@ -57,10 +54,10 @@
   &--like::before {
     content: "";
     position: absolute;
-    width: 33px;
-    height: 27px;
     top: 16px;
     left: 8px;
+    width: 33px;
+    height: 27px;
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
   }
@@ -68,10 +65,10 @@
   &--handmade::before {
     content: "";
     position: absolute;
-    width: 34px;
-    height: 34px;
     top: 16px;
     left: 8px;
+    width: 34px;
+    height: 34px;
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
   }
@@ -79,10 +76,10 @@
   &--prodaction::before {
     content: "";
     position: absolute;
-    width: 54px;
-    height: 23px;
     top: 16px;
     left: 8px;
+    width: 54px;
+    height: 23px;
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
   }
@@ -90,10 +87,10 @@
   &--gift::before {
     content: "";
     position: absolute;
-    width: 32px;
-    height: 32px;
     top: 16px;
     left: 8px;
+    width: 32px;
+    height: 32px;
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
   }

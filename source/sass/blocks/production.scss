@@ -6,28 +6,28 @@
 
 .production__title {
   display: flex;
+  margin: 0;
   justify-content: space-around;
   align-items: center;
   color: #000000;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin: 0;
 }
 
 .production__title::before {
   content: "";
-  width: 40px;
-  height: 30px;
   left: 30px;
   top: 30px;
+  width: 40px;
+  height: 30px;
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
 }
 
 .production__description {
-  color: #000000;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+  color: #000000;
 }

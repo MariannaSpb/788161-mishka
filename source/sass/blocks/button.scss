@@ -1,15 +1,15 @@
 .button {
   display: block;
-  box-shadow: inset 0 0 0 2px #444444;
-  border: none;
   padding: 16px;
   text-align: center;
+  font-family: inherit;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #444444;
   text-transform: uppercase;
   text-decoration: none;
+  color: #444444;
+  box-shadow: inset 0 0 0 2px #444444;
+  border: none;
   background: #ffffff;
-  font-family: inherit;
 }

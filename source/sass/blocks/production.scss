@@ -5,17 +5,17 @@
 }
 
 .production__title {
-  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: #000000;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  padding: 23px 0 0 90px;
   margin: 0;
 }
 
 .production__title::before {
-  position: absolute;
   content: "";
   width: 40px;
   height: 30px;

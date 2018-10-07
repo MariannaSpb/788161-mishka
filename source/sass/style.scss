@@ -1,42 +1,21 @@
-body {
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
-
-@import "../sass/fonts.scss";
-@import "../sass/blocks/page-main__wrapper.scss";
-@import "../sass/blocks/page-header.scss";
-@import "../sass/blocks/main-nav.scss";
-@import "../sass/blocks/page-main.scss";
-@import "../sass/blocks/page-footer.scss";
-@import "../sass/blocks/button.scss";
-@import "../sass/blocks/week-product.scss";
-@import "../sass/blocks/about.scss";
-@import "../sass/blocks/copyright.scss";
-@import "../sass/blocks/production.scss";
-@import "../sass/blocks/review-group.scss";
-@import "../sass/blocks/review.scss";
-@import "../sass/blocks/contact.scss";
-@import "../sass/blocks/social.scss";
-@import "../sass/blocks/modal-window.scss";
-@import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/catalog-card.scss";
-@import "../sass/blocks/filter-form.scss";
+@import "fonts";
+@import "global";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-main";
+@import "blocks/page-footer";
+@import "blocks/button";
+@import "blocks/week-product";
+@import "blocks/about";
+@import "blocks/copyright";
+@import "blocks/production";
+@import "blocks/review-group";
+@import "blocks/review";
+@import "blocks/contact";
+@import "blocks/social";
+@import "blocks/modal-window";
+@import "blocks/catalog";
+@import "blocks/catalog-card";
+@import "blocks/filter-form";
+@import "blocks/header-block";
+@import "blocks/visually-hidden";

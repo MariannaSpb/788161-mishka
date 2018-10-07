@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   background-color: white;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
 }
 
 .page-header__logo {
@@ -10,17 +10,17 @@
   justify-content: center;
   align-items: center;
   min-height: 79px;
+  width: 85px;
+  height: 35px;
 }
 
-.page-header__button-hamburger {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border: none;
-}
 
 .hamburger {
   background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
-  width: 21px;
-  height: 20px;
+  width: 39px;
+  height: 35px;
+  background-size: 22px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }

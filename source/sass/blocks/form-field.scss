@@ -1,0 +1,110 @@
+.form-field__text,
+.form-field__user-email,
+.form-field__user-phone {
+  margin-bottom: 22px;
+  padding-bottom: 7px;
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+
+.form-field__label {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+
+
+.form-field__input--check + label::before {
+  content: "";
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 28px;
+  border: 2px solid;
+}
+
+.form-field__input--check:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+
+.form-field__input--radio + .form-field__label::before {
+  content: "";
+  left: 54px;
+  margin-right: 28px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+
+.form-field__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  padding-bottom: 26px;
+}
+
+.form-field__user-wishes {
+  padding: 10px;
+  width: 260px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: inset 0 0 0 2px #444444;
+  resize: none;
+}
+
+.form-field__required {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.form-field__text::-webkit-input-placeholder,
+.form-field__user-phone::-webkit-input-placeholder,
+.form-field__user-email::-webkit-input-placeholder,
+.form-field__user-wishes::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: inherit;
+  color: #c7c7c7;
+}
+
+
+.form-field__phone-image,
+.form-field__email-image {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}

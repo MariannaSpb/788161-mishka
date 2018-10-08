@@ -1,0 +1,48 @@
+.week-product {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 41px;
+  outline: 1px solid;
+}
+
+.week-product__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.week-product__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.week-product__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.week-product__info {
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.week-product__characteristics {
+  border-bottom: 1px solid #ececec;
+}
+
+.week-product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  align-self: center;
+}

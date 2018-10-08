@@ -1,0 +1,16 @@
+.header-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+
+.header-block__title {
+  margin: 0;
+  padding: 60px 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}

@@ -1,0 +1,101 @@
+.about {
+  padding: 0 30px;
+  color: #000000;
+  outline: 1px solid;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__item {
+  position: relative;
+  margin-bottom: 57px;
+  padding-top: 64px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  &--eco::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--scandinavian::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 46px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 33px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--prodaction::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 54px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item:last-child {
+  margin-bottom: 0;
+}

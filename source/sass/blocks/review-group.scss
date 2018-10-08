@@ -1,0 +1,14 @@
+.review-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  color: #000000;
+  outline: 1px solid;
+}
+
+.review-group__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}

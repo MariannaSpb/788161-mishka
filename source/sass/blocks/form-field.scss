@@ -1,14 +1,18 @@
 .form-field__text,
 .form-field__user-email,
 .form-field__user-phone {
-  margin-bottom: 22px;
-  padding-bottom: 7px;
   width: 100%;
   height: 38px;
+  // margin-bottom: 22px;
+  // padding-bottom: 7px;
+
   border: none;
   border-bottom: 2px solid black;
 }
 
+.form-field__input-wrap {
+  position: relative;
+}
 
 .form-field__label {
   display: flex;
@@ -23,20 +27,25 @@
 
 .form-field__input--check + label::before {
   content: "";
+
   flex-shrink: 0;
   width: 40px;
   height: 40px;
   margin-right: 28px;
+
   border: 2px solid;
 }
 
 .form-field__input--check:checked + label::after {
   content: "";
+
   position: absolute;
   top: 8px;
   left: 7px;
+
   width: 32px;
   height: 22px;
+
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
@@ -44,11 +53,14 @@
 
 .form-field__input--radio + .form-field__label::before {
   content: "";
+
   left: 54px;
-  margin-right: 28px;
+
   flex-shrink: 0;
   width: 40px;
   height: 40px;
+  margin-right: 28px;
+
   border: 2px solid;
   border-radius: 50%;
 }
@@ -56,11 +68,14 @@
 
 .form-field__input--radio:checked + label::after {
   content: "";
+
   position: absolute;
   top: 14px;
   left: 14px;
+
   width: 16px;
   height: 16px;
+
   background-color: #62d1ba;
   border-radius: 50%;
 }
@@ -68,6 +83,7 @@
 
 .form-field {
   position: relative;
+
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
@@ -75,11 +91,13 @@
 }
 
 .form-field__user-wishes {
-  padding: 10px;
-  width: 260px;
   box-sizing: border-box;
+  width: 260px;
+  padding: 10px;
+
   border: none;
   box-shadow: inset 0 0 0 2px #444444;
+
   resize: none;
 }
 

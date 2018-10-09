@@ -1,4 +1,6 @@
 .review__text {
+  margin: 0;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -7,6 +9,7 @@
 
 .review__autor {
   margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -14,6 +17,7 @@
 
 .review__link {
   margin: 0;
+
   font-size: 17px;
   line-height: 30px;
   color: #444444;
@@ -26,6 +30,7 @@
 .review__button {
   width: 130px;
   height: 53px;
+
   background-color: #ffffff;
   border: 1px solid #ececec;
 }

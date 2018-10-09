@@ -1,8 +1,10 @@
 .social__list {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
-  align-items: flex-end;
+
   list-style: none;
 }
 

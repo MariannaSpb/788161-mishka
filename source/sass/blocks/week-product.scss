@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   padding: 20px 30px 41px;
+
   outline: 1px solid;
 }
 
 .week-product__title {
   margin: 0;
+
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -14,6 +16,8 @@
 }
 
 .week-product__label {
+  margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -22,6 +26,8 @@
 }
 
 .week-product__description {
+  margin: 0;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -32,6 +38,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+
   background-color: #ffffff;
 }
 
@@ -40,9 +47,11 @@
 }
 
 .week-product__price {
+  align-self: center;
+  margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #444444;
-  align-self: center;
 }

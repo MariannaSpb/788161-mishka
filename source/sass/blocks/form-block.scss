@@ -1,16 +1,19 @@
 
 .form-block {
   display: flex;
+  flex-direction: column;
   padding: 0;
+
   border: none;
   border-top: 1px solid #62d1ba;
 }
 
 .form-block__legend {
   padding-bottom: 26px;
-  color: #62d1ba;
-  text-transform: uppercase;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  color: #62d1ba;
+  text-transform: uppercase;
 }

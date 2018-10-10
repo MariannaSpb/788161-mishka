@@ -11,7 +11,7 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <div class="page-header__wrapper">
+      <!-- <div class="page-header__wrapper"> -->
         <a class="page-header__logo">
           <svg class="page-header__logo-img" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034"
@@ -29,7 +29,7 @@
           </svg>
         </a>
         <button class="page-header__button-hamburger hamburger" type="button"></button>
-      </div>
+      <!-- </div> -->
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -37,6 +37,8 @@
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
+      </ul>
+      <ul class="main-nav__user-navigation">
         <li class="main-nav__item main-nav__item--search">
           <a class="main-nav__link" href="#"><span class="main-nav__search">Поиск по сайту</span></a>
         </li>
@@ -49,9 +51,9 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper">
-        <div class="page-main__block">
-      <h1 class="page-main__title">Милые штуки ручной<br>
-        работы для дома</h1>
+      <div class="page-main__block">
+        <h1 class="page-main__title">Милые штуки ручной<br>
+          работы для дома</h1>
       </div>
       <ul class="page-main__menu">
         <li class="page-main__item page-main__item--light-green">
@@ -62,8 +64,11 @@
       </ul>
     </div>
     <section class="week-product">
+      <div class="week-product__title-wrapper">
       <h2 class="week-product__title">Вязаные корзинки</h2>
       <p class="week-product__label">Товар недели</p>
+    </div>
+      <div class="week-product__wrapper">
       <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветки</p>
       <table class="week-product__info">
         <tr>
@@ -79,13 +84,14 @@
           <td class="week-product__characteristics">15 см</td>
         </tr>
       </table>
-      <p class="image-wrapper">
+      <p class="week-product__image-wrapper">
         <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотография товара">
       </p>
       <p class="week-product__price">Цена: 990 руб.</p>
       <a class="button week-product__button" href="#">
         Заказать
       </a>
+    </div>
     </section>
     <section class="about">
       <h2 class="about__title">
@@ -146,29 +152,29 @@
     </section>
     <section class="contact">
       <div class="contact-wrapper">
-      <h2 class="contact__title">
-        Контакты
-      </h2>
-      <div class="contact__info">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <p class="contact__email">e-mail</p>
-            <p class="contact__email contact__email--text"><a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-          </li>
-          <li class="contact__item">
-            <p class="contact__address">адрес</p>
-            <p class="contact__address contact__address--text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
-              офис 101</p>
-          </li>
-        </ul>
-      </div>
+        <h2 class="contact__title">
+          Контакты
+        </h2>
+        <div class="contact__info">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <p class="contact__email">e-mail</p>
+              <p class="contact__email contact__email--text"><a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+            </li>
+            <li class="contact__item">
+              <p class="contact__address">адрес</p>
+              <p class="contact__address contact__address--text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
+                офис 101</p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="contact__map">
         <img class="contact__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="карта">
       </div>
       <div class="contact-wrapper">
-      <a class="button contact__write" href="#">Напишите нам</a>
-    </div>
+        <a class="button contact__write" href="#">Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">

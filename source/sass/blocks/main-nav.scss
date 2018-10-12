@@ -17,6 +17,14 @@
   list-style: none;
 }
 
+.main-nav__menu-offer {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .main-nav__user-navigation {
   display: flex;
   flex-direction: column;
@@ -77,6 +85,13 @@
   }
 }
 
+
+.main-nav__delivery {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .main-nav {
     display: flex;
@@ -92,11 +107,18 @@
     display: none;
   }
 
+
+
   .main-nav__link {
+    border: none;
     border-left: 1px solid #ececec;
   }
 
   .main-nav__delivery {
+    display: block;
+    width: 233px;
+    margin-left: auto;
+
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;

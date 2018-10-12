@@ -1,7 +1,5 @@
 .contact {
   color: #000000;
-
-  outline: 1px solid;
 }
 
 .contact__title {
@@ -9,6 +7,7 @@
 }
 
 .contact__list {
+  display: flex;
   margin: 0;
   padding: 0;
 
@@ -17,6 +16,11 @@
 
 .contact__item {
   display: flex;
+  margin-right: 10px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .contact__map {
@@ -25,15 +29,99 @@
   overflow: hidden;
 }
 
-.contact__email,
-.contact__address {
-  margin-right: 10px;
+.contact__write {
+  width: 226px;
+  margin: 40px auto 40px;
 }
 
 .email-link {
   color: #444444;
 }
 
-.contact-wrapper {
-  padding: 0 30px;
+// .contact-wrapper {
+//   padding: 0 30px;
+// }
+
+@media (min-width: 768px) {
+  .contact {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    // padding: 0 45px;
+    padding-top: 140px;
+    padding-bottom: 18px;
+  }
+
+  .contact__wrapper {
+    padding: 0 50px;
+  }
+
+  .contact::before {
+    content: "";
+
+    position: absolute;
+    top: 72px;
+    left: 0;
+
+    width: 768px;
+    height: 23px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 20px 100%;
+    background-size: 768px 20px;
+  }
+
+  .contact__title {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -10px;
+      right: 0;
+
+      width: 48px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+
+  .contact__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 40px;
+  }
+
+  .contact__item {
+    display: flex;
+    margin-right: 10px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contact__map {
+    width: 100%;
+
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  // .contact__write {
+  //   align-items: center;
+  //   align-self: center;
+  //   width: 226px;
+  // }
 }

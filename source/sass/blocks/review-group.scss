@@ -2,13 +2,44 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px;
+
   color: #000000;
-  outline: 1px solid;
 }
 
 .review-group__title {
   margin: 0;
+
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700;
+}
+
+.review__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .review-group {
+    position: relative;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+  }
+
+  .review-group__title {
+    order: -2;
+
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

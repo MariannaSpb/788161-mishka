@@ -13,8 +13,8 @@
   font-weight: 700;
   font-family: "Open Sans";
   font-style: normal;
-  src: local("Open Sans"),
+  src: local("Open Sans Bold"),
     local("OpenSans-Bold"),
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }

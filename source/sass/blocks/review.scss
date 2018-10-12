@@ -34,3 +34,31 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
 }
+
+@media (min-width: 768px) {
+  .review {
+    padding-bottom: 135px;
+  }
+
+  .review__text {
+    margin-bottom: 62px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__write {
+    order: -1;
+  }
+
+  .review__button {
+    border: none;
+  }
+
+  .review__pagination {
+    position: absolute;
+    right: 55px;
+    bottom: 99px;
+  }
+}

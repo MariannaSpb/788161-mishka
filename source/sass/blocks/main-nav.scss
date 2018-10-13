@@ -95,6 +95,7 @@
 @media (min-width: 768px) {
   .main-nav {
     display: flex;
+    flex-wrap: wrap;
     width: 670px;
     margin: auto;
   }
@@ -108,15 +109,33 @@
     display: none;
   }
 
+  .main-nav__list {
+    z-index: 10;
+
+    order: 2;
+  }
 
   .main-nav__link {
+    width: 137px;
+    padding: 16px 37px 0 0;
+
+    font-size: 15px;
+
     border: none;
     border-left: 1px solid #ececec;
+
+    &--border {
+      border: none;
+    }
   }
 
   .main-nav__delivery {
+    z-index: 10;
+
     display: block;
+    order: 3;
     width: 233px;
+    margin-top: 14px;
     margin-left: auto;
 
     font-weight: 400;

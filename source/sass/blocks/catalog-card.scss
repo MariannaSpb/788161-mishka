@@ -1,5 +1,6 @@
 .catalog-card__title {
   margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -8,6 +9,7 @@
 
 .catalog-card__description {
   margin: 0;
+
   font-size: 13px;
   line-height: 30px;
   color: #000000;
@@ -15,7 +17,40 @@
 
 .catalog-card__price {
   margin: 0;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .catalog-card__description {
+    display: flex;
+    flex-grow: 1;
+
+    font-size: 15px;
+    line-height: 30px;
+
+    // border: 1px #ececec solid;
+  }
+
+  .catalog-card__description-block {
+    width: 100%;
+
+    border: 1px #ececec solid;
+  }
+
+  .catalog-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-card__product-img {
+    width: 334px;
+    height: 335px;
+  }
+
+  .catalog-card__price {
+    font-size: 17px;
+  }
 }

@@ -1,13 +1,14 @@
 .catalog {
   padding: 0 30px;
+
   background-color: #ffffff;
-  outline: 1px solid;
 }
 
 
 .catalog__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -18,16 +19,29 @@
 
 .catalog__price-block {
   display: flex;
-  margin-top: 19px;
   justify-content: space-between;
   align-items: center;
   width: 205px;
   min-height: 72px;
+  margin-top: 19px;
+
   border-top: 1px solid #ececec;
 }
 
 .catalog__description-block {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 26px;
+}
+
+@media (min-width: 768px) {
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .catalog__price-block {
+    width: 100%;
+  }
 }

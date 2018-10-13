@@ -8,6 +8,11 @@
   list-style: none;
 }
 
+
 .social__item {
   margin-right: 40px;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
 }

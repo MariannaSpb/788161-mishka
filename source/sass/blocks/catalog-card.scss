@@ -7,8 +7,13 @@
   color: #000000;
 }
 
+// .catalog__item {
+//   margin-bottom: 34px;
+// }
+
 .catalog-card__description {
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: 13px;
   line-height: 30px;
@@ -41,6 +46,8 @@
   }
 
   .catalog-card__title {
+    margin-top: 26px;
+
     font-size: 20px;
     line-height: 24px;
   }

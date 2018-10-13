@@ -35,3 +35,55 @@
   line-height: 24px;
   color: #000000;
 }
+
+@media (min-width: 768px) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+
+    background-color: #ffffff;
+  }
+
+  .production__title {
+    justify-content: flex-start;
+    order: 2;
+    padding-left: 44px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .production__video {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .production__video-img {
+    width: 668px;
+    height: 457px;
+    margin: 0 auto;
+  }
+
+  .production__description {
+    order: 3;
+    width: 586px;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__button {
+    order: 4;
+    width: 579px;
+    margin: 30px auto 30px;
+  }
+
+  .production__title-text {
+    margin-left: 25px;
+  }
+}

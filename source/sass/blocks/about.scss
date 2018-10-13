@@ -127,6 +127,11 @@
     padding: 45px 50px 55px;
   }
 
+
+  .about__block {
+    display: flex;
+  }
+
   .about__list {
     display: flex;
     flex-wrap: wrap;
@@ -147,29 +152,5 @@
 
     font-size: 20px;
     line-height: 22px;
-
-    &--eco {
-      order: 1;
-    }
-
-    &--handmade {
-      order: 2;
-    }
-
-    &--scandinavian {
-      order: 3;
-    }
-
-    &--prodaction {
-      order: 4;
-    }
-
-    &--like {
-      order: 5;
-    }
-
-    &--gift {
-      order: 6;
-    }
   }
 }

@@ -1,16 +1,29 @@
 .copyright {
   display: flex;
-  padding: 0 30px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  padding: 0 30px;
+
   color: #000000;
+
   border-top: 1px solid #e5e5e5;
 }
 
 .copyright__title {
   margin: 0;
-  color: #000000;
+
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 184px;
+    margin-top: 0;
+
+    border: 0;
+  }
 }

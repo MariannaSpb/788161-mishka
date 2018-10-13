@@ -96,6 +96,7 @@
   .main-nav {
     display: flex;
     width: 670px;
+    margin: auto;
   }
 
   .main-nav__list,
@@ -106,7 +107,6 @@
   .main-nav__search {
     display: none;
   }
-
 
 
   .main-nav__link {

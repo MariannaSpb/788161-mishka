@@ -151,8 +151,24 @@
   .form-field__user-email {
     background-color: #f1f1f1;
   }
+
   .form-field__user-wishes {
     width: 500px;
     height: 140px;
+  }
+
+  .form-field--user-block {
+    flex-direction: row-reverse;
+    /* width: 498px; */
+    align-items: baseline;
+  }
+
+  .form-field__label--text {
+    width: 76px;
+  }
+
+  .form-field__label--text-surname,
+  .form-field__label--text-patronymic {
+    width: 145px;
   }
 }

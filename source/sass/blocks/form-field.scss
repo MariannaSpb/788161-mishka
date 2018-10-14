@@ -96,6 +96,12 @@
   }
 }
 
+.form-field__button {
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+
 .form-field__user-wishes {
   box-sizing: border-box;
   width: 260px;
@@ -108,6 +114,8 @@
 }
 
 .form-field__required-text {
+  margin: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -170,5 +178,44 @@
   .form-field__label--text-surname,
   .form-field__label--text-patronymic {
     width: 145px;
+  }
+
+  .form-field__input--radio:checked + label::after {
+    top: 17px;
+    left: 17px;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-field__input--radio + .form-field__label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .form-field__label {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form-field__input--check + label::before {
+    width: 50px;
+    height: 49px;
+  }
+
+  .form-field__text::-webkit-input-placeholder,
+  .form-field__user-phone::-webkit-input-placeholder,
+  .form-field__user-email::-webkit-input-placeholder,
+  .form-field__user-wishes::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  .form-field__button {
+    width: 230px;
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 16px;
   }
 }

@@ -30,19 +30,22 @@
   }
 
   .form-block__legend {
-    width: 165px;
+    width: 167px;
 
     &--type,
     &--name {
-      width: 104px;
+      width: 167px;
     }
   }
 
   .form-block__container--checkbox {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
+  // .form-block__container--checkbox {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
 
   .form-block__container--name {
     width: 500px;

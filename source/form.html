@@ -67,69 +67,83 @@
     </p>
     <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">Тип</legend>
-        <p class="form-field">
+        <div class="form-block__container">
+        <div class="form-field">
           <input class="form-field__input form-field__input--radio visually-hidden" type="radio" name="type" value="acsessuares"
             id="toggle-1" checked>
           <label class="form-field__label" for="toggle-1">Аксессуар для интерьера</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field">
           <input class="form-field__input form-field__input--radio visually-hidden" type="radio" name="type" value="toys"
             id="toggle-2">
           <label class="form-field__label" for="toggle-2">Детская игрушка</label>
-        </p>
+        </div>
+      </div>
+      </div>
       </fieldset>
+      <div class="filter-form__decor">
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">Цвет</legend>
-        <p class="form-field">
+        <div class="form-block__container--checkbox">
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="white"
             id="checkbox-1" checked>
           <label class="form-field__label" for="checkbox-1">Белый</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="gray"
             id="checkbox-2" checked>
           <label class="form-field__label" for="checkbox-2">Серый</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="tiffany"
             id="checkbox-3">
-          <label class="form-field__label" for="checkbox-3">Тиффани</label>
-        </p>
-        <p class="form-field">
+          <label class="form-field__label" for="checkbox-3">«Тиффани»</label>
+        </div>
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="black"
             id="checkbox-4">
           <label class="form-field__label" for="checkbox-4">Черный</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="pink"
             id="checkbox-5">
           <label class="form-field__label" for="checkbox-5">Розовый</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field--check">
           <input class="form-field__input form-field__input--check visually-hidden" type="checkbox" name="color" value="orange"
             id="checkbox-6">
           <label class="form-field__label" for="checkbox-6">Оранжевый</label>
-        </p>
+        </div>
+        </div>
+        </div>
       </fieldset>
+    </div>
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">ФИО</legend>
-        <p class="form-field">
+        <div class="form-field">
           <input class="form-field__text" type="text" name="user-name" id="name" placeholder="Введите ваше имя*"
             required>
           <label class="form-field__label" for="name">Имя:</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field">
           <input class="form-field__text" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*"
             required>
           <label class="form-field__label" for="surname">Фамилия:</label>
-        </p>
-        <p class="form-field">
+        </div>
+        <div class="form-field">
           <input class="form-field__text" type="text" name="user-patronymic" id="patronymic" placeholder="Отчество, если желаете">
           <label class="form-field__label" for="patronymic">Отчество:</label>
-        </p>
+        </div>
+        </div>
       </fieldset>
+      <div class="filter-form__decor">
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">Тел</legend>
         <div class="form-field">
           <div class="form-field__input-wrap">
@@ -150,10 +164,12 @@
               </g>
             </svg>
           </div>
-        </div>
         <label class="form-field__label" for="phone"></label>
+        </div>
+        </div>
       </fieldset>
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">E-mail</legend>
         <div class="form-field">
           <div class="form-field__input-wrap">
@@ -167,18 +183,24 @@
             <label class="form-field__label" for="email"></label>
           </div>
         </div>
+        </div>
       </fieldset>
+      </div>
       <fieldset class="form-block">
+          <div class="form-block__wrapper">
         <legend class="form-block__legend">Доп</legend>
         <p class="form-field">
           <textarea class="form-field__user-wishes" name="user-wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <label class="filter-form__label visually-hidden" for="wishes">Доп</label>
         </p>
+        </div>
       </fieldset>
-      <p class="form-field__required">
+      <div class="form-field__required">
+      <p class="form-field__required-text">
         *Поля обязательны для заполнения
       </p>
       <button class="button form-field__button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
   <footer class="page-footer">

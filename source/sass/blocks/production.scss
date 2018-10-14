@@ -48,6 +48,7 @@
   .production__title {
     justify-content: flex-start;
     order: 2;
+    margin-bottom: 27px;
     padding-left: 44px;
 
     font-weight: 700;
@@ -70,7 +71,7 @@
   .production__description {
     order: 3;
     width: 586px;
-    margin: 0;
+    margin: 0 auto;
 
     font-weight: 400;
     font-size: 15px;
@@ -79,8 +80,8 @@
 
   .production__button {
     order: 4;
-    width: 579px;
-    margin: 30px auto 30px;
+    width: 553px;
+    margin: 35px auto 107px;
   }
 
   .production__title-text {

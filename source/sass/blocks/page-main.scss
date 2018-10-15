@@ -195,7 +195,7 @@
     min-height: 626px;
     margin-top: -40px;
 
-    background-image: url(../img/hero-desktop@1x.jpg);
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% 44px;
     background-size: 1150px auto;
   }
@@ -220,6 +220,7 @@
   .page-main__wrapper::after {
     background-size: 1150px 36px;
   }
+
   .page-main__wrapper {
     background-color: #f9f9f9;
     border-top: 1px solid #ececec;

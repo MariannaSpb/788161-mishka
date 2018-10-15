@@ -27,6 +27,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -41,5 +42,28 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .review-group__title {
+    padding-left: 175px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .review-group {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .review__text,
+  .review__autor-block {
+    padding-left: 175px;
+  }
+
+  .review__text {
+    width: 770px;
   }
 }

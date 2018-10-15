@@ -143,3 +143,20 @@
     line-height: 24px;
   }
 }
+
+
+@media (min-width: 1150px) {
+  .main-nav {
+    width: 1050px;
+  }
+
+  .main-nav__menu-offer {
+    z-index: 10;
+
+    display: flex;
+  }
+
+  .main-nav__list {
+    order: -1;
+  }
+}

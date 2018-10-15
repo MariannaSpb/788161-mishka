@@ -154,3 +154,26 @@
     line-height: 22px;
   }
 }
+
+
+@media (min-width: 1150px) {
+  .about__title {
+    padding-left: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__block {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .about__list {
+    width: 350px;
+  }
+
+  .about {
+    padding: 0;
+  }
+}

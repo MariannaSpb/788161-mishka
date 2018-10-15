@@ -54,3 +54,19 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: 1150px) {
+  .header-block {
+    width: 100%;
+    min-height: 255px;
+
+    &::after {
+      background-size: 1150px 36px;
+    }
+  }
+
+  .header-block__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

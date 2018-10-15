@@ -1,5 +1,6 @@
 .catalog-card__title {
   margin: 0;
+  padding-top: 26px;
 
   font-weight: 700;
   font-size: 17px;
@@ -46,8 +47,6 @@
   }
 
   .catalog-card__title {
-    margin-top: 26px;
-
     font-size: 20px;
     line-height: 24px;
   }
@@ -59,5 +58,12 @@
 
   .catalog-card__price {
     font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-card__product-img {
+    width: 316px;
+    height: 464px;
   }
 }

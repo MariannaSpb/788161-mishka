@@ -17,8 +17,7 @@
   position: relative;
 
   display: block;
-  max-width: 320px;
-  padding: 20px 30px;
+
 
   &--light-green {
     background-color: #63d1bb;
@@ -66,6 +65,7 @@
   position: relative;
 
   display: flex;
+  padding: 20px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -151,9 +151,10 @@
   }
 
   .page-main__link {
+    width: 299px;
     min-height: 103px;
+    padding: 27px 0 0 35px;
 
-    font-weight: 700;
     font-size: 20px;
     line-height: 30px;
   }
@@ -182,5 +183,38 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .page-main__block {
+    min-height: 626px;
+    margin-top: -40px;
+
+    background-image: url(../img/hero-desktop@1x.jpg);
+    background-position: 50% 0;
+    background-size: 1150px auto;
+  }
+
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main__title {
+    width: 620px;
+    margin-top: 153px;
+
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__menu {
+    width: 1050px;
+  }
+
+  .page-main__wrapper::after {
+    background-size: 1150px 36px;
   }
 }

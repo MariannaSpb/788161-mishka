@@ -38,3 +38,9 @@
     margin: auto;
   }
 }
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1150px;
+  }
+}

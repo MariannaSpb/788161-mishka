@@ -8,6 +8,18 @@
   list-style: none;
 }
 
+.main-nav__icon-basket {
+  position: absolute;
+  top: 32px;
+  left: 30px;
+}
+
+.main-nav__icon-search {
+  position: absolute;
+  top: 32px;
+  left: 33px;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -54,35 +66,35 @@
   margin: 0;
   padding: 0;
 
-  &--search::before {
-    content: "";
+  // &--search::before {
+  //   content: "";
 
-    position: absolute;
-    top: 29px;
-    left: 41px;
+  //   position: absolute;
+  //   top: 29px;
+  //   left: 41px;
 
-    width: 18px;
-    height: 18px;
+  //   width: 18px;
+  //   height: 18px;
 
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
+  //   background-image: url("../img/icon-search.svg");
+  //   background-repeat: no-repeat;
+  //   opacity: 0.2;
+  // }
 
-  &--basket::before {
-    content: "";
+  // &--basket::before {
+  //   content: "";
 
-    position: absolute;
-    top: 29px;
-    left: 37px;
+  //   position: absolute;
+  //   top: 29px;
+  //   left: 37px;
 
-    width: 20px;
-    height: 18px;
+  //   width: 20px;
+  //   height: 18px;
 
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
+  //   background-image: url("../img/icon-cart.svg");
+  //   background-repeat: no-repeat;
+  //   opacity: 0.2;
+  // }
 }
 
 
@@ -116,16 +128,32 @@
   }
 
   .main-nav__link {
-    width: 137px;
-    padding: 16px 37px 0 0;
-
+    // width: 137px;
+    // padding: 16px 37px 0 0;
     font-size: 15px;
 
     border: none;
-    border-left: 1px solid #ececec;
+    // border-left: 1px solid #ececec;
 
     &--border {
       border: none;
+    }
+
+    &--search {
+      padding-bottom: 71px;
+      // min-height: 35px;
+      padding-left: 82px;
+
+      border-left: 1px solid #ececec;
+    }
+
+    &--basket {
+      width: 184px;
+      padding-top: 32px;
+      padding-bottom: 43px;
+      padding-left: 83px;
+
+      border-left: 1px solid #ececec;
     }
   }
 
@@ -135,12 +163,28 @@
     display: block;
     order: 3;
     width: 233px;
-    margin-top: 14px;
+    margin-top: 24px;
     margin-left: auto;
 
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
+  }
+
+  .main-nav__user-navigation {
+    width: 350px;
+  }
+
+  .main-nav__icon-basket {
+    position: absolute;
+    top: 35px;
+    left: 33px;
+  }
+
+  .main-nav__icon-search {
+    position: absolute;
+    top: 38px;
+    left: 34px;
   }
 }
 

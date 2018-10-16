@@ -2,4 +2,17 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px;
+  padding-bottom: 55px;
+}
+
+@media (min-width: 768px) {
+  .filter-form {
+    padding: 0;
+  }
+
+  .filter-form__decor:nth-child(2n) {
+    width: 100%;
+
+    background-color: #f1f1f1;
+  }
 }

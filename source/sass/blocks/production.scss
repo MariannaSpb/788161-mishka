@@ -1,26 +1,30 @@
 .production {
   padding: 0 30px;
+
   background-color: #ffffff;
-  outline: 1px solid;
 }
 
 .production__title {
   display: flex;
-  margin: 0;
   justify-content: space-around;
   align-items: center;
-  color: #000000;
+  margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  color: #000000;
 }
 
 .production__title::before {
   content: "";
-  left: 30px;
+
   top: 30px;
+  left: 30px;
+
   width: 40px;
   height: 30px;
+
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
 }
@@ -30,4 +34,109 @@
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+.production__video {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+
+    background-color: #ffffff;
+  }
+
+  .production__title {
+    justify-content: flex-start;
+    order: 2;
+    margin-bottom: 27px;
+    padding-left: 44px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .production__video {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .production__video-img {
+    width: 668px;
+    height: 457px;
+    margin: 0 auto;
+  }
+
+  .production__description-block-video {
+    order: 2;
+
+    border: 1px solid #ececec;
+  }
+
+  .production__description {
+    order: 3;
+    width: 586px;
+    margin: 0 auto;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__button {
+    order: 4;
+    width: 553px;
+    margin: 35px auto 107px;
+  }
+
+  .production__title-text {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .production {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .production__video {
+    order: -1;
+    margin: 0;
+  }
+
+  .production__title {
+    flex-wrap: wrap;
+    width: 158px;
+    /* justify-content: flex-end; */
+    padding-top: 95px;
+    padding-right: 50px;
+    padding-left: 91px;
+    /* flex-direction: column; */
+  }
+
+  .production__description {
+    width: 295px;
+    padding: 0 0 11px 84px;
+  }
+
+  .production__description-block-video {
+    padding: 0 7px;
+
+    border: 1px solid #ececec;
+  }
+
+  .production__title-text {
+    margin: 0;
+  }
+
+  .production__button {
+    width: 230px;
+    margin: 35px auto 49px;
+  }
 }

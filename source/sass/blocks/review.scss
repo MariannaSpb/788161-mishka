@@ -1,4 +1,6 @@
 .review__text {
+  margin: 0;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -7,6 +9,7 @@
 
 .review__autor {
   margin: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -14,6 +17,7 @@
 
 .review__link {
   margin: 0;
+
   font-size: 17px;
   line-height: 30px;
   color: #444444;
@@ -26,6 +30,42 @@
 .review__button {
   width: 130px;
   height: 53px;
+
   background-color: #ffffff;
   border: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .review {
+    order: 3;
+  }
+
+  .review__autor-block {
+    order: 4;
+    margin-bottom: 50px;
+  }
+
+  .review__text {
+    margin-top: 40px;
+    margin-bottom: 62px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__write {
+    order: 2;
+    width: 170px;
+    margin-left: auto;
+  }
+
+  .review__button {
+    border: none;
+  }
+
+  .review__pagination {
+    order: 5;
+    margin-left: auto;
+  }
 }

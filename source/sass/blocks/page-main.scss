@@ -3,18 +3,21 @@
 }
 
 .page-main__description {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+
   background: #ffffff;
 }
 
 .page-main__item {
-  display: inline-block;
   position: relative;
-  width: 100%;
+
+  display: block;
+
 
   &--light-green {
     background-color: #63d1bb;
@@ -26,23 +29,29 @@
 }
 
 .page-main__item--light-green::after {
-  position: absolute;
   content: "";
-  left: 241px;
-  top: 18px;
+
+  position: absolute;
+  top: 19px;
+  left: 244px;
+
   width: 40px;
   height: 62px;
+
   background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
 }
 
 .page-main__item--dark-green::after {
-  position: absolute;
   content: "";
-  left: 226px;
-  top: 18px;
+
+  position: absolute;
+  top: 22px;
+  left: 233px;
+
   width: 62px;
   height: 62px;
+
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
 }
@@ -54,33 +63,166 @@
 
 .page-main__link {
   position: relative;
+
   display: flex;
-  min-height: 77px;
-  padding-top: 26px;
-  padding-left: 28px;
+  padding: 20px 30px;
+
+  font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  font-weight: 700;
   color: #ffffff;
 }
 
 .page-main__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
   justify-content: space-between;
-  height: 400px;
+  width: 320px;
+
   background-color: #fbfbfb;
   border-top: 1px solid #ececec;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 373px;
-  outline: 1px solid;
+  // background-image: url("../img/hero-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-size: 320px 373px;
 }
 
 .page-main__title {
+  align-self: center;
+  width: 260px;
+  margin: 0;
+
+  font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700;
   text-align: center;
+}
+
+.page-main__block {
+  display: flex;
+  flex-direction: column;
+  min-height: 282px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -20px;
+  background-size: 578px;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    position: relative;
+
+    width: 768px;
+  }
+
+  .page-main__wrapper {
+    position: relative;
+
+    width: 100%;
+    margin-top: -78px;
+
+    border-top: 1px solid #ececec;
+  }
+
+  .page-main__block {
+    min-height: 626px;
+    // margin-top: -40px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
+    background-size: 1150px auto;
+  }
+
+  .page-main__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin: auto;
+  }
+
+  .page-main__item {
+    flex-grow: 1;
+  }
+
+  .page-main__title {
+    width: 512px;
+    margin-top: 153px;
+
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main__link {
+    width: 299px;
+    min-height: 103px;
+    padding: 27px 0 0 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-main__wrapper::after {
+    content: "";
+
+    position: absolute;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position-x: 50%;
+    background-size: 768px 25px;
+  }
+
+  .page-main__description {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .page-main__block {
+    min-height: 626px;
+    margin-top: -40px;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 44px;
+    background-size: 1150px auto;
+  }
+
+  .page-main {
+    width: 100%;
+  }
+
+  .page-main__title {
+    width: 620px;
+    margin-top: 153px;
+
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__menu {
+    width: 1050px;
+  }
+
+  .page-main__wrapper::after {
+    background-size: 1150px 36px;
+  }
+
+  .page-main__wrapper {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ececec;
+  }
 }

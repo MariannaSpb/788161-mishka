@@ -1,16 +1,65 @@
 
 .form-block {
   display: flex;
+  flex-direction: column;
   padding: 0;
+
   border: none;
   border-top: 1px solid #62d1ba;
 }
 
 .form-block__legend {
   padding-bottom: 26px;
-  color: #62d1ba;
-  text-transform: uppercase;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  color: #62d1ba;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .form-block {
+    border: none;
+  }
+
+  .form-block__wrapper {
+    display: flex;
+    align-items: baseline;
+    padding: 0 50px;
+  }
+
+  .form-block__legend {
+    width: 167px;
+
+    &--type,
+    &--name {
+      width: 167px;
+    }
+  }
+
+  .form-block__container--checkbox {
+    display: flex;
+  }
+  // .form-block__container--checkbox {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+
+  .form-block__container--name {
+    width: 500px;
+  }
+
+  // .form-field__label--text
+  // .form-field__label--text {
+  //   width: 76px;
+  //   // display: flex;
+  //   // align-items: center;
+  //   // margin-bottom: 26px;
+  //   // font-weight: 700;
+  //   // font-size: 17px;
+  //   // line-height: 18px;
+  //   // color: #000000;
+  // }
 }

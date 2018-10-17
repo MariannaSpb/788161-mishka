@@ -1,5 +1,6 @@
 .about {
   padding: 0 30px;
+  padding-bottom: 52px;
 
   color: #000000;
 }
@@ -26,8 +27,7 @@
 .about__item {
   position: relative;
 
-  margin-bottom: 57px;
-  padding-top: 64px;
+  padding-top: 84px;
 
   font-weight: 700;
   font-size: 17px;
@@ -37,7 +37,7 @@
     content: "";
 
     position: absolute;
-    top: 16px;
+    top: 32px;
     left: 8px;
 
     width: 32px;
@@ -51,8 +51,8 @@
     content: "";
 
     position: absolute;
-    top: 16px;
-    left: 8px;
+    top: 32px;
+    left: 0;
 
     width: 46px;
     height: 27px;
@@ -65,7 +65,7 @@
     content: "";
 
     position: absolute;
-    top: 16px;
+    top: 36px;
     left: 8px;
 
     width: 33px;
@@ -79,8 +79,8 @@
     content: "";
 
     position: absolute;
-    top: 16px;
-    left: 8px;
+    top: 32px;
+    left: 3px;
 
     width: 34px;
     height: 34px;
@@ -93,8 +93,8 @@
     content: "";
 
     position: absolute;
-    top: 16px;
-    left: 8px;
+    top: 32px;
+    left: -6px;
 
     width: 54px;
     height: 23px;
@@ -107,8 +107,8 @@
     content: "";
 
     position: absolute;
-    top: 16px;
-    left: 8px;
+    top: 29px;
+    left: 3px;
 
     width: 32px;
     height: 32px;

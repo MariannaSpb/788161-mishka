@@ -32,7 +32,7 @@
   content: "";
 
   position: absolute;
-  top: 19px;
+  top: 24px;
   left: 244px;
   z-index: 1;
 
@@ -60,6 +60,7 @@
 
 .page-main__menu {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -69,7 +70,7 @@
 
   display: flex;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 27px 28px;
 
   font-weight: 700;
   font-size: 19px;
@@ -96,6 +97,7 @@
   align-self: center;
   width: 260px;
   margin: 0;
+  margin-top: 70px;
 
   font-weight: 700;
   font-size: 27px;

@@ -1,3 +1,11 @@
+.review {
+  margin-bottom: 28px;
+}
+
+.review__autor-block {
+  margin-bottom: 32px;
+}
+
 .review__text {
   margin: 0;
 
@@ -25,6 +33,7 @@
 
 .review__pagination {
   display: flex;
+  margin-bottom: 36px;
 }
 
 .review__button {
@@ -34,6 +43,13 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
 }
+
+.review__write {
+  margin-bottom: 86px;
+
+  font-size: 18px;
+}
+
 
 @media (min-width: 768px) {
   .review {

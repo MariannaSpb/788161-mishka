@@ -4,7 +4,7 @@
 
 .page-main__description {
   margin: 0;
-  padding: 0;
+  padding: 21px 40px 24px 29px;
 
   font-size: 13px;
   line-height: 24px;
@@ -149,7 +149,17 @@
   }
 
   .page-main__item {
-    flex-grow: 1;
+    width: 334px;
+  }
+
+  .page-main__item--light-green::after {
+    top: 29px;
+    left: 258px;
+  }
+
+  .page-main__item--dark-green::after {
+    top: 31px;
+    left: 240px;
   }
 
   .page-main__title {
@@ -164,7 +174,7 @@
   .page-main__link {
     // width: 299px;
     min-height: 103px;
-    padding: 27px 0 0 35px;
+    padding: 26px 0 31px 36px;
 
     font-size: 20px;
     line-height: 30px;
@@ -174,7 +184,7 @@
     content: "";
 
     position: absolute;
-    bottom: -1px;
+    bottom: -12px;
 
     display: block;
     width: 100%;

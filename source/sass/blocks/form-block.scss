@@ -2,20 +2,43 @@
 .form-block {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
   padding: 0;
 
   border: none;
-  border-top: 1px solid #62d1ba;
+  // border-top: 1px solid #62d1ba;
 }
 
 .form-block__legend {
-  padding-bottom: 26px;
+  position: relative;
+  // padding-bottom: 26px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #62d1ba;
   text-transform: uppercase;
+
+  &--type {
+    padding-bottom: 34px;
+  }
+
+  &--color {
+    padding-bottom: 26px;
+  }
+}
+
+.form-block__legend::after {
+  content: "";
+
+  position: absolute;
+  top: 19%;
+  left: 59px;
+
+  width: 197px;
+  height: 2px;
+
+  background-color: #62d1ba;
 }
 
 @media (min-width: 768px) {

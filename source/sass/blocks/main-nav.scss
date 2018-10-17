@@ -21,7 +21,8 @@
 // }
 
 .main-nav__list {
-  display: flex;
+  // display: none;
+  display: block;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -38,7 +39,8 @@
 }
 
 .main-nav__user-navigation {
-  display: flex;
+  // display: none;
+  display: block;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -56,8 +58,6 @@
   text-align: center;
   color: #000000;
   text-decoration: none;
-
-
 
   &--search {
     display: block;
@@ -130,6 +130,7 @@
 
   .main-nav__list,
   .main-nav__user-navigation {
+    display: flex;
     flex-direction: row;
   }
 

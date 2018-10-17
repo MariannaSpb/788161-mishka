@@ -1,7 +1,25 @@
 .week-product {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   // padding: 20px 30px 41px;
+}
+
+.week-product::after {
+  content: "";
+
+  position: absolute;
+  bottom: 9px;
+
+  display: block;
+  width: 320px;
+  height: 25px;
+
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-position-x: 100%;
+  background-size: 272px 6px;
 }
 
 .week-product__title {
@@ -62,8 +80,10 @@
 }
 
 .week-product__characteristics {
-  width: 95px;
-  height: 38px;
+  width: 12vh;
+  // width: 95px;
+  // height: 38px;
+  height: 5vh;
 
   border-bottom: 1px solid #ececec;
 

@@ -67,4 +67,23 @@
     width: 316px;
     height: 464px;
   }
+
+
+  .catalog-card__title:hover {
+    color: #666666;
+
+    opacity: 0.6;
+  }
+
+  .catalog-card__title:active {
+    opacity: 0.3;
+  }
+
+  .catalog-card__modal-link:hover path {
+    fill: #6dd4bf;
+  }
+
+  .catalog-card__modal-link:active path {
+    fill: #d0f1ea;
+  }
 }

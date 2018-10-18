@@ -34,7 +34,7 @@
   position: absolute;
   top: 24px;
   left: 244px;
-  z-index: 1;
+  // z-index: 1;
 
   width: 40px;
   height: 62px;
@@ -49,7 +49,7 @@
   position: absolute;
   top: 22px;
   left: 233px;
-  z-index: 1;
+  // z-index: 1;
 
   width: 62px;
   height: 62px;
@@ -66,7 +66,7 @@
 
 .page-main__link {
   position: relative;
-  z-index: 2;
+  // z-index: 2;
 
   display: flex;
   box-sizing: border-box;
@@ -235,6 +235,10 @@
     width: 1050px;
   }
 
+  .page-main__item {
+    flex-grow: 1;
+  }
+
   .page-main__wrapper::after {
     background-size: 1150px 36px;
   }
@@ -242,5 +246,41 @@
   .page-main__wrapper {
     background-color: #f9f9f9;
     border-top: 1px solid #ececec;
+  }
+
+
+
+  .page-main__item--light-green:active,
+  .page-main__item--light-green:hover {
+    background-color: #59d5bc;
+  }
+
+  .page-main__link:hover .page-main__link::after {
+    opacity: 0.5;
+  }
+
+  .page-main__link:active {
+    opacity: 0.3;
+  }
+
+  .page-main__item--dark-green:active,
+  .page-main__item--dark-green:hover {
+    background-color: #46c1ae;
+  }
+
+  .page-main__item--light-green:active .page-main__link,
+  .page-main__item--light-green:active .page-main__link::after,
+  .page-main__item--dark-green:active .page-main__link,
+  .page-main__item--dark-green:active .page-main__link::after::after {
+    opacity: 0.3;
+  }
+
+  // .page-main__item--dark-green:active .page-main__link::after,
+  // .page-main__item--light-green:active .page-main__link::after {
+  //   top: 36px;
+  // }
+
+  .page-main__link:hover {
+    padding: 31px 0 31px 36px;
   }
 }

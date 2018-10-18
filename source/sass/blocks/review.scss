@@ -85,3 +85,25 @@
     margin-left: auto;
   }
 }
+
+
+
+@media (min-width: 1150px) {
+  .review__text,
+  .review__autor-block {
+    padding-left: 175px;
+  }
+
+  .review__text {
+    width: 770px;
+  }
+
+
+  .review__button:hover {
+    opacity: 0.6;
+  }
+
+  .review__button:active {
+    opacity: 0.3;
+  }
+}

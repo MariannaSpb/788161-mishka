@@ -58,8 +58,16 @@
 }
 
 .production__video {
+  position: relative;
+
   order: 2;
   margin: 0;
+}
+
+.production__video-play {
+  position: absolute;
+  top: 50%;
+  right: 295px;
 }
 
 .production__button {
@@ -134,6 +142,14 @@
     padding: 0;
   }
 
+  .production:hover {
+    box-shadow: 0 7px 10px 0 rgba(0,0,0,0.1);
+  }
+
+  .production:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+  }
+
   .production__video {
     order: -1;
     margin: 0;
@@ -166,5 +182,15 @@
   .production__button {
     width: 230px;
     margin: 35px auto 49px;
+  }
+
+  .production__video-play:focus,
+  .production__video-play:hover {
+    transform: scale(1.2);
+  }
+
+  .production__video-play:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }

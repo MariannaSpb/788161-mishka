@@ -81,6 +81,8 @@
 @media (min-width: 1150px) {
   .page-header__logo {
     justify-content: center;
+    width: max-content;
+    margin: 0;
   }
 
   .page-header {

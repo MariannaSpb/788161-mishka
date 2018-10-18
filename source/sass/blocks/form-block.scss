@@ -64,25 +64,21 @@
   .form-block__container--checkbox {
     display: flex;
   }
-  // .form-block__container--checkbox {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
+
 
   .form-block__container--name {
     width: 500px;
   }
+}
 
-  // .form-field__label--text
-  // .form-field__label--text {
-  //   width: 76px;
-  //   // display: flex;
-  //   // align-items: center;
-  //   // margin-bottom: 26px;
-  //   // font-weight: 700;
-  //   // font-size: 17px;
-  //   // line-height: 18px;
-  //   // color: #000000;
-  // }
+@media (min-width: 1150px) {
+  .form-block__container--checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-block__container--checkbox-right,
+  .form-block__container--checkbox-left {
+    display: flex;
+  }
 }

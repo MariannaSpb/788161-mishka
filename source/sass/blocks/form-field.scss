@@ -227,3 +227,22 @@
     line-height: 16px;
   }
 }
+
+
+
+@media (min-width: 768px) {
+  .form-field__required-text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-field__user-wishes {
+    width: 700px;
+  }
+
+  .form-field__required {
+    width: 700px;
+    margin: auto;
+    padding: 0;
+  }
+}

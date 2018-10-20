@@ -54,17 +54,18 @@
 @media (min-width: 768px) {
   .review {
     order: 3;
+    margin-top: 44px;
+    margin-bottom: 59px;
   }
-
+  .review__autor {
+    font-size: 18px;
+  }
   .review__autor-block {
     order: 4;
     margin-bottom: 50px;
   }
 
   .review__text {
-    margin-top: 40px;
-    margin-bottom: 62px;
-
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
@@ -72,8 +73,8 @@
 
   .review__write {
     order: 2;
-    width: 170px;
-    margin-left: auto;
+    width: 176px;
+    margin: 0;
   }
 
   .review__button {
@@ -82,7 +83,8 @@
 
   .review__pagination {
     order: 5;
-    margin-left: auto;
+    width: 178px;
+    margin: 0;
   }
 }
 

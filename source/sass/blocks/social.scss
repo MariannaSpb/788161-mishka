@@ -19,3 +19,11 @@
 .social__item:nth-child(3n) {
   margin-right: 0;
 }
+
+@media (min-width: 768px) {
+  .social__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 73px;
+  }
+}

@@ -1,4 +1,6 @@
 .copyright {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +9,20 @@
 
   color: #000000;
 
-  border-top: 1px solid #e5e5e5;
+  // border-top: 1px solid #e5e5e5;
+}
+
+.copyright::before {
+  content: "";
+
+  position: absolute;
+  top: -18px;
+  left: -35px;
+
+  width: 262px;
+  height: 1px;
+
+  background-color: #e5e5e5;
 }
 
 .copyright__title {
@@ -29,7 +44,21 @@
   .copyright {
     width: 184px;
     margin-top: 0;
+    padding: 0;
 
     border: 0;
+  }
+
+  .copyright__link {
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  .copyright__title {
+    margin: 0;
+  }
+
+  .copyright::before {
+    display: none;
   }
 }

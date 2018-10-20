@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 100px;
+    padding-top: 81px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -43,6 +44,7 @@
 
   .review-group__title {
     order: 1;
+    margin: -3px;
 
     font-weight: 700;
     font-size: 43px;

@@ -61,14 +61,17 @@
   .header-block {
     width: 100%;
     min-height: 255px;
-    margin-top: -80px;
+    margin-top: -68px;
+    margin-bottom: 100px;
 
     &::after {
-      background-size: 1150px 36px;
+      background-size: 1150px 41px;
     }
   }
 
   .header-block__title {
+    margin-top: 17px;
+
     font-size: 53px;
     line-height: 57px;
   }

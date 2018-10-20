@@ -7,6 +7,17 @@
 
   border: none;
   // border-top: 1px solid #62d1ba;
+  &--color {
+    margin-bottom: 10px;
+  }
+
+  &--user {
+    margin-bottom: 9px;
+  }
+
+  &--wishes {
+    margin-bottom: 17px;
+  }
 }
 
 .form-block__legend {
@@ -26,13 +37,21 @@
   &--color {
     padding-bottom: 26px;
   }
+
+  &--name {
+    margin-bottom: 28px;
+  }
+
+  &--wishes {
+    margin-bottom: 29px;
+  }
 }
 
 .form-block__legend::after {
   content: "";
 
   position: absolute;
-  top: 19%;
+  top: 7px;
   left: 59px;
 
   width: 197px;

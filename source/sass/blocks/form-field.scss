@@ -38,7 +38,9 @@
   &--text,
   &--text-patronymic,
   &--contact {
-    margin-bottom: 27px;
+    width: 260px;
+    height: auto;
+    // margin-bottom: 27px;
     padding-left: 0;
   }
 }
@@ -121,14 +123,14 @@
 
   &--user-block {
     height: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
 .form-field__button {
   width: 260px;
   margin: 0 auto;
-  margin-top: 31px;
+  // margin-top: 31px;
 }
 
 .form-field__user-wishes {
@@ -149,6 +151,7 @@
 
 .form-field__required-text {
   margin: 0;
+  padding-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;

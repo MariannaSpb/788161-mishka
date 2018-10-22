@@ -12,6 +12,7 @@
 
   list-style: none;
 }
+
 .catalog__item {
   margin-bottom: 30px;
 }
@@ -91,10 +92,10 @@
 
 
   .catalog__item:hover {
-    box-shadow: 0 7px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   .catalog__item:active {
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }

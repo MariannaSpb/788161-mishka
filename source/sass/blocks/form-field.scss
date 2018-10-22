@@ -47,8 +47,6 @@
 //   margin-bottom: 0;
 // }
 
-
-
 .form-field__input--check + label::before {
   content: "";
 
@@ -144,7 +142,6 @@
   /* height: 108px; */
 
   border: none;
-  -webkit-box-shadow: inset 0 0 0 2px #444444;
   box-shadow: inset 0 0 0 2px #444444;
 
   resize: none;
@@ -260,7 +257,6 @@
     line-height: 16px;
   }
 }
-
 
 
 @media (min-width: 768px) {

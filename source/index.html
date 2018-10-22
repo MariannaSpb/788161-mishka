@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo">
         <svg class="page-header__logo-img" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034"
@@ -27,7 +27,7 @@
           </g>
         </svg>
       </a>
-      <button class="page-header__button-hamburger hamburger" type="button"></button>
+      <button class="page-header__button-humburger page-header__button-humburger--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--border" href="catalog.html">Каталог товаров</a>
@@ -302,6 +302,22 @@
       </a>
     </div>
   </section>
+<script>
+  var siteNav = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.page-header__button-humburger');
+
+  siteNav.classList.remove('main-nav--nojs');
+  navToggle.addEventListener('click', function() {
+    if (siteNav.classList.contains('main-nav--closed')) {
+      siteNav.classList.remove('main-nav--closed');
+      siteNav.classList.add('main-nav--opened');
+    } else {
+      siteNav.classList.add('main-nav--closed');
+      siteNav.classList.remove('main-nav--opened');
+    }
+  });
+</script>
+
 </body>
 
 

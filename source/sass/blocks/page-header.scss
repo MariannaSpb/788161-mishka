@@ -18,10 +18,20 @@
   padding-bottom: 22px;
 }
 
-// .page-header__logo-img {
-//   padding-top: 22px;
-//   padding-bottom: 19px;
-// }
+
+// остановилась тут
+.page-header__button-humburger {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+
+  width: 26px;
+  height: 24px;
+
+  // background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
+  // border: none;
+}
+
 
 .main-nav--closed .page-header__button-humburger {
   position: absolute;
@@ -47,20 +57,17 @@
   background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
 }
 
+
 .main-nav--nojs .main-nav__item {
   display: block;
 }
 
-.main-nav--nojs .page-header__button-humburger {
-  display: block;
-}
 
-@media (min-width: 320px) {
+@media (max-width: 767px) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
 }
-
 
 @media (min-width: 768px) {
   .page-header__logo {
@@ -82,7 +89,10 @@
   .page-header__logo {
     justify-content: center;
     width: max-content;
+    min-height: 70px;
     margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .page-header {

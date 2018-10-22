@@ -40,6 +40,11 @@
     // border: 1px #ececec solid;
   }
 
+  .catalog__cart-image {
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
   .catalog-card__description-block {
     width: 100%;
 
@@ -47,6 +52,8 @@
   }
 
   .catalog-card__title {
+    width: 240px;
+
     font-size: 20px;
     line-height: 24px;
   }

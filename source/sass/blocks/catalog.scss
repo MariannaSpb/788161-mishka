@@ -52,7 +52,11 @@
   }
 
   .catalog__price-block {
+    display: flex;
+    align-items: center;
     width: 100%;
+    min-height: 71px;
+    padding: 0;
   }
 
   .catalog {

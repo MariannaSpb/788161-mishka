@@ -2,9 +2,6 @@
   position: relative;
 
   color: #000000;
-
-  // background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
-  // background-size: 324px 16px;
 }
 
 // .contact::before {
@@ -107,6 +104,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 17px;
+    padding-top: 80px;
+
+    background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
+    background-repeat: repeat-x;
+    background-position: 23px 0;
+    background-size: 768px 20px;
   }
 
   .contact__img {
@@ -117,27 +120,26 @@
     padding: 0 50px;
   }
 
-  .contact::before {
-    content: "";
+  // .contact::before {
+  //   content: "";
 
-    position: absolute;
-    top: -39px;
-    left: 0;
+  //   position: absolute;
+  //   top: -39px;
+  //   left: 0;
 
-    width: 100%;
-    height: 23px;
+  //   width: 100%;
+  //   height: 23px;
 
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 20px 100%;
-    background-size: 768px 20px;
-  }
+  //   background-image: url("../img/bg-zigzag-line.svg");
+  //   background-repeat: repeat-x;
+  //   background-position: 20px 100%;
+  //   background-size: 768px 20px;
+  // }
 
   .contact__title {
     position: relative;
 
     min-height: 81px;
-    margin-top: 46px;
     margin-bottom: 17px;
     margin-left: -3px;
 

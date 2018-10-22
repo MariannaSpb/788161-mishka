@@ -36,14 +36,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     padding-top: 81px;
     padding-right: 50px;
+    padding-bottom: 68px;
     padding-left: 50px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px;
+    // background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
+    // background-repeat: repeat-x;
+    // background-position: 20px 100%;
+    // background-size: 768px 20px;
   }
 
   .review-group__title {
@@ -60,12 +65,14 @@
   .review-group__title {
     padding-left: 175px;
 
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .review-group {
     padding-right: 0;
     padding-left: 0;
+
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
   }
 }

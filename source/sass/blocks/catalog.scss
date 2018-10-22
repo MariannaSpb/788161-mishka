@@ -12,6 +12,9 @@
 
   list-style: none;
 }
+.catalog__item {
+  margin-bottom: 30px;
+}
 
 .catalog-card__link,
 .catalog-card__title-link {
@@ -31,8 +34,8 @@
 .catalog__description-block {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
   padding: 0 26px;
+  padding-top: 26px;
 
   border: 1px #ececec solid;
 }

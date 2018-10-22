@@ -3,28 +3,30 @@
 
   display: flex;
   flex-direction: column;
-  // padding: 20px 30px 41px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 47px;
+  padding-left: 30px;
+
+  background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
+  background-size: 324px 16px;
 }
 
-.week-product::after {
-  content: "";
+// .week-product::after {
+//   content: "";
 
-  position: absolute;
-  bottom: 9px;
+//   display: block;
+//   width: 320px;
+//   height: 25px;
 
-  display: block;
-  width: 320px;
-  height: 25px;
-
-  background-image: url(../img/bg-zigzag-line.svg);
-  background-repeat: repeat-x;
-  background-position-x: 100%;
-  background-size: 272px 6px;
-}
+//   background-image: url(../img/bg-zigzag-line.svg);
+//   background-repeat: repeat-x;
+//   background-position-x: 100%;
+//   background-size: 272px 6px;
+// }
 
 .week-product__title {
   margin: 0;
-  margin-bottom: 6px;
 
   font-weight: 700;
   font-size: 25px;
@@ -32,10 +34,7 @@
   color: #000000;
 }
 
-.week-product__wrapper {
-  padding: 0 30px;
-  padding-bottom: 69px;
-}
+
 
 .week-product__image-wrapper {
   margin: 0;
@@ -44,12 +43,11 @@
 }
 
 .week-product__title-wrapper {
-  padding: 0 30px;
+  margin-bottom: 29px;
 }
 
 .week-product__label {
   margin: 0;
-  margin-bottom: 22px;
 
   font-weight: 700;
   font-size: 17px;

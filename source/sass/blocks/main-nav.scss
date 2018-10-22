@@ -10,8 +10,8 @@
 
 
 .main-nav__list {
-  display: none;
-  // display: block;
+  // display: none;
+  display: block;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -28,8 +28,8 @@
 }
 
 .main-nav__user-navigation {
-  display: none;
-  // display: block;
+  // display: none;
+  display: block;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -38,8 +38,9 @@
 }
 
 .main-nav__link {
+  position: relative;
+
   display: block;
-  // padding: 27px;
   padding-top: 26px;
   padding-bottom: 28px;
   padding-left: 75px;
@@ -86,19 +87,17 @@
   padding: 0;
 }
 
-// .main-nav__icon-search {
-//   width: 17.6px;
-//   height: 24.6px;
-//   margin-right: 29px;
-//   margin-left: -29px;
-// }
+.main-nav__icon-search {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
 
-// .main-nav__icon-basket {
-//   width: 17.6px;
-//   height: 24.6px;
-//   margin-right: 26px;
-//   margin-left: -26px;
-// }
+.main-nav__icon-basket {
+  position: absolute;
+  top: 30px;
+  left: 31px;
+}
 
 @media (min-width: 768px) {
   .main-nav {

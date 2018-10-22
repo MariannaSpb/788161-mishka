@@ -10,7 +10,7 @@
     padding: 0;
   }
 
-  .filter-form__decor:nth-child(2n) {
+  .filter-form__decor:nth-child(even) {
     width: 100%;
 
     background-color: #f1f1f1;

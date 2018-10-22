@@ -1,8 +1,6 @@
 .form-field__text {
   width: 100%;
   height: 40px;
-  // margin-bottom: 22px;
-  // padding-bottom: 7px;
 
   border: none;
   border-bottom: 2px solid black;
@@ -21,39 +19,46 @@
   position: relative;
 }
 
+
 .form-field__label {
-  display: flex;
-  align-items: center;
-  width: 260px;
-  // margin-bottom: 22px;
+  display: block;
+  width: 200px;
+  height: 37px;
+  margin-bottom: 13px;
+  padding-top: 10px;
+  padding-left: 62px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
 
-  &--check {
-    margin-bottom: 22px;
-  }
 
-  &--radio {
-    margin-bottom: 5px;
-  }
   &--text-surname,
   &--text,
-  &--text-patronymic {
-    margin-bottom: 6px;
+  &--text-patronymic,
+  &--contact {
+    margin-bottom: 27px;
+    padding-left: 0;
   }
 }
+
+// .form-field__label--check:last-child {
+//   margin-bottom: 0;
+// }
+
 
 
 .form-field__input--check + label::before {
   content: "";
 
+  position: absolute;
+  top: 0;
+  left: 0;
+
   flex-shrink: 0;
   width: 36px;
-  height: 35px;
-  margin-right: 22px;
+  height: 34px;
 
   border: 2px solid;
 }
@@ -76,12 +81,13 @@
 .form-field__input--radio + .form-field__label::before {
   content: "";
 
-  left: 54px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   flex-shrink: 0;
   width: 36px;
   height: 36px;
-  margin-right: 20px;
 
   border: 2px solid;
   border-radius: 50%;
@@ -92,11 +98,11 @@
   content: "";
 
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 13px;
+  left: 12px;
 
   width: 16px;
-  height: 16px;
+  height: 15px;
 
   background-color: #62d1ba;
   border-radius: 50%;
@@ -109,13 +115,15 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
-  // margin-bottom: 26px;
+
 
   &--check {
     position: relative;
   }
+
   &--user-block {
-    margin-bottom: 24px;
+    height: 75px;
+    margin-bottom: 20px;
   }
 }
 

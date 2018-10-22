@@ -2,11 +2,14 @@
 .form-block {
   display: flex;
   flex-direction: column;
+  margin-right: 0;
   margin-bottom: 32px;
+  margin-bottom: 15px;
+  margin-left: 0;
   padding: 0;
 
   border: none;
-  // border-top: 1px solid #62d1ba;
+
   &--color {
     margin-bottom: 10px;
   }
@@ -22,39 +25,27 @@
 
 .form-block__legend {
   position: relative;
-  // padding-bottom: 26px;
+
+  padding-bottom: 25px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #62d1ba;
   text-transform: uppercase;
-
-  &--type {
-    padding-bottom: 34px;
-  }
-
-  &--color {
-    padding-bottom: 26px;
-  }
-
-  &--name {
-    margin-bottom: 28px;
-  }
-
-  &--wishes {
-    margin-bottom: 29px;
-  }
 }
 
 .form-block__legend::after {
   content: "";
 
   position: absolute;
-  top: 7px;
-  left: 59px;
+  top: 6px;
+  left: 71px;
 
-  width: 197px;
+  width: 191px;
+  /* top: 7px; */
+  /* left: 83px; */
+  /* width: 177px; */
   height: 2px;
 
   background-color: #62d1ba;

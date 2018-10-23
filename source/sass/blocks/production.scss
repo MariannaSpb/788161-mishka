@@ -144,51 +144,60 @@
 }
 
 
+// @media (min-width: 1150px) {
+//   .production {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     padding: 0;
+//   }
+
+//   .production:hover {
+//     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
+//   }
+
+//   .production:active {
+//     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+//   }
+
+//   .production__video {
+//     // order: -1;
+//     // margin: 0;
+//     order: 0;
+//   }
+
+//   // .production__title {
+//   //   flex-wrap: wrap;
+//   //   height: 83px;
+//   //   margin-top: 20px;
+//   // }
+
+//   .production__description {
+//     width: 295px;
+//     padding: 0;
+//   }
+
+//   .production__description-block-video {
+//     // order: 3;
+//     // margin-top: -322px;
+//     // margin-right: 12px;
+//     // margin-left: auto;
+//     order: 0;
+//     padding: 33px 20px 0 23px;
+
+//     // border: 1px solid #ececec;
+//   }
+
+//   .production__title-text {
+//     margin: 0;
+//   }
+
+//   .production__title {
+//     order: 0;
+//   }
+
+
 @media (min-width: 1150px) {
-  .production {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  .production:hover {
-    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .production:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .production__video {
-    order: -1;
-    margin: 0;
-  }
-
-  .production__title {
-    flex-wrap: wrap;
-    height: 83px;
-    margin-top: 20px;
-  }
-
-  .production__description {
-    width: 295px;
-    padding: 0;
-  }
-
-  .production__description-block-video {
-    order: 3;
-    margin-top: -322px;
-    margin-right: 12px;
-    margin-left: auto;
-
-    border: 1px solid #ececec;
-  }
-
-  .production__title-text {
-    margin: 0;
-  }
-
   .production__button {
     width: 230px;
     margin: 35px auto 49px;
@@ -202,5 +211,28 @@
   .production__video-play:active {
     transform: scale(0.8);
     opacity: 0.3;
+  }
+  .production {
+    width: 400px;
+    /* order: 2; */
+    margin-left: auto;
+  }
+
+  .production__video-img {
+    position: absolute;
+    top: -400px;
+    right: 400px;
+  }
+  .production__title {
+    order: 0;
+  }
+
+  .production__description {
+    order: 0;;
+    width: 260px;
+  }
+
+  .production__description-block-video {
+    order: 0;
   }
 }

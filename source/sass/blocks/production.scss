@@ -135,14 +135,14 @@
     width: 580px;
     margin: 10px auto 74px;
   }
+
+  .production__video-play {
+    position: absolute;
+    top: 193px;
+    left: 283px;
+  }
 }
 
-
-.production__video-play {
-  position: absolute;
-  top: 193px;
-  left: 283px;
-}
 
 @media (min-width: 1150px) {
   .production {

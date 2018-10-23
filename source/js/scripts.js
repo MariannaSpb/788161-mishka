@@ -12,4 +12,3 @@
       siteNav.classList.remove('main-nav--opened');
     }
   });
-

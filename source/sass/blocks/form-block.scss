@@ -3,23 +3,26 @@
   display: flex;
   flex-direction: column;
   margin-right: 0;
-  // margin-bottom: 32px;
   margin-bottom: 15px;
   margin-left: 0;
   padding: 0;
 
   border: none;
 
-  &--color {
-    margin-bottom: 10px;
-  }
+  // &--color {
+  //   margin-bottom: 10px;
+  // }
 
-  &--user {
-    margin-bottom: 9px;
-  }
+  // &--user {
+  //   margin-bottom: 9px;
+  // }
 
-  &--wishes {
-    margin-bottom: 17px;
+  // &--wishes {
+  //   margin-bottom: 17px;
+  // }
+
+  &--contact {
+    margin-bottom: 31px;
   }
 }
 
@@ -33,6 +36,10 @@
   line-height: 16px;
   color: #62d1ba;
   text-transform: uppercase;
+
+  &--contact {
+    padding-bottom: 4px;
+  }
 }
 
 .form-block__legend::after {
@@ -43,10 +50,7 @@
   left: 71px;
 
   width: 191px;
-  /* top: 7px; */
-  /* left: 83px; */
-  /* width: 177px; */
-  height: 2px;
+  height: 1px;
 
   background-color: #62d1ba;
 }

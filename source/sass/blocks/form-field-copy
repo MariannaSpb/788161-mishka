@@ -1,4 +1,11 @@
-.form-field__text,
+.form-field__text {
+  width: 100%;
+  height: 40px;
+
+  border: none;
+  border-bottom: 2px solid black;
+}
+
 .form-field__user-email,
 .form-field__user-phone {
   width: 100%;
@@ -33,8 +40,7 @@
   &--contact {
     width: 260px;
     height: auto;
-    margin-bottom: 0;
-    padding-top: 3px;
+    // margin-bottom: 27px;
     padding-left: 0;
   }
 }

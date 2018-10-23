@@ -8,10 +8,10 @@
   background-color: #f1f1f1;
 }
 
-// .page-footer__social {
-//   margin: 0;
-//   padding: 0 30px;
-// }
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .page-footer__logo {
   display: none;
@@ -42,5 +42,6 @@
 @media (min-width: 1150px) {
   .page-footer__wrapper {
     width: 1150px;
+    padding: 0 50px;
   }
 }

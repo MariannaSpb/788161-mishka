@@ -1,6 +1,6 @@
 .catalog-card__title {
   margin: 0;
-  padding-top: 26px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 17px;
@@ -40,6 +40,11 @@
     // border: 1px #ececec solid;
   }
 
+  .catalog__cart-image {
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
   .catalog-card__description-block {
     width: 100%;
 
@@ -47,6 +52,8 @@
   }
 
   .catalog-card__title {
+    width: 240px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -65,5 +72,24 @@
   .catalog-card__product-img {
     width: 316px;
     height: 464px;
+  }
+
+
+  .catalog-card__title:hover {
+    color: #666666;
+
+    opacity: 0.6;
+  }
+
+  .catalog-card__title:active {
+    opacity: 0.3;
+  }
+
+  .catalog-card__modal-link:hover path {
+    fill: #6dd4bf;
+  }
+
+  .catalog-card__modal-link:active path {
+    fill: #d0f1ea;
   }
 }

@@ -1,13 +1,21 @@
 .review-group {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  margin-bottom: 31px;
   padding: 0 30px;
+  padding-bottom: 54px;
 
   color: #000000;
+
+  background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
+  background-size: 324px 16px;
 }
 
 .review-group__title {
   margin: 0;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 25px;
@@ -20,6 +28,7 @@
   line-height: 30px;
 }
 
+
 @media (min-width: 768px) {
   .review-group {
     position: relative;
@@ -27,17 +36,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 0;
+    padding-top: 81px;
     padding-right: 50px;
+    padding-bottom: 68px;
     padding-left: 50px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px;
+    // background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
+    // background-repeat: repeat-x;
+    // background-position: 20px 100%;
+    // background-size: 768px 20px;
   }
 
   .review-group__title {
     order: 1;
+    margin: -3px;
 
     font-weight: 700;
     font-size: 43px;
@@ -49,21 +65,15 @@
   .review-group__title {
     padding-left: 175px;
 
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .review-group {
     padding-right: 0;
+    padding-bottom: 114px;
     padding-left: 0;
-  }
 
-  .review__text,
-  .review__autor-block {
-    padding-left: 175px;
-  }
-
-  .review__text {
-    width: 770px;
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
   }
 }

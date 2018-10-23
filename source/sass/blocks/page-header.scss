@@ -18,49 +18,56 @@
   padding-bottom: 22px;
 }
 
-// .page-header__logo-img {
-//   padding-top: 22px;
-//   padding-bottom: 19px;
-// }
 
-.hamburger {
+// остановилась тут
+.page-header__button-humburger {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 28px;
+  right: 25px;
 
-  width: 19px;
-  height: 14px;
+  width: 26px;
+  height: 24px;
 
-  background-color: #ffffff;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-size: 17px;
+  // background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
+  // border: none;
+}
+
+
+.main-nav--closed .page-header__button-humburger {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+
+  width: 21px;
+  height: 20px;
+
+  background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
   border: none;
   cursor: pointer;
 }
 
-// .page-header__wrapper {
-//   position: relative;
+.main-nav--opened .page-header__button-humburger--close {
+  position: absolute;
+  top: 27px;
+  right: 27px;
 
-//   width: 320px;
-// }
+  width: 26px;
+  height: 24px;
 
-// .page-header__wrapper {
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   padding: 0 30px;
+  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
+}
 
-//   outline: 1px solid;
-// }
 
-// .humburger {
-//   width: 21px;
-//   height: 20px;
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
 
-//   background-image: url("../img/icon-menu-close.svg");
-//   background-repeat: no-repeat;
-// }
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
   .page-header__logo {
@@ -69,7 +76,7 @@
     padding-bottom: 27px;
   }
 
-  .page-header__button-hamburger {
+  .page-header__button-humburger {
     display: none;
   }
 
@@ -81,5 +88,14 @@
 @media (min-width: 1150px) {
   .page-header__logo {
     justify-content: center;
+    width: max-content;
+    min-height: 70px;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .page-header {
+    width: 1150px;
   }
 }

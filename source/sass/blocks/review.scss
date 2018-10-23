@@ -1,3 +1,11 @@
+.review {
+  margin-bottom: 28px;
+}
+
+.review__autor-block {
+  margin-bottom: 32px;
+}
+
 .review__text {
   margin: 0;
 
@@ -25,6 +33,7 @@
 
 .review__pagination {
   display: flex;
+  margin-bottom: 36px;
 }
 
 .review__button {
@@ -35,9 +44,20 @@
   border: 1px solid #ececec;
 }
 
+.review__write {
+  font-size: 18px;
+}
+
+
 @media (min-width: 768px) {
   .review {
     order: 3;
+    margin-top: 44px;
+    margin-bottom: 59px;
+  }
+
+  .review__autor {
+    font-size: 18px;
   }
 
   .review__autor-block {
@@ -46,9 +66,6 @@
   }
 
   .review__text {
-    margin-top: 40px;
-    margin-bottom: 62px;
-
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
@@ -56,8 +73,8 @@
 
   .review__write {
     order: 2;
-    width: 170px;
-    margin-left: auto;
+    width: 176px;
+    margin: 0;
   }
 
   .review__button {
@@ -66,6 +83,33 @@
 
   .review__pagination {
     order: 5;
-    margin-left: auto;
+    width: 178px;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .review__text,
+  .review__autor-block {
+    padding-left: 175px;
+  }
+
+  .review__text {
+    width: 770px;
+  }
+
+  .review {
+    margin: 0;
+    padding-top: 44px;
+    padding-bottom: 43px;
+  }
+
+  .review__button:hover {
+    opacity: 0.6;
+  }
+
+  .review__button:active {
+    opacity: 0.3;
   }
 }

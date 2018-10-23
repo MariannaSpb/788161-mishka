@@ -208,14 +208,25 @@
   .contact__info {
     display: table;
     width: 310px;
-    margin-top: 50px;
-    margin-left: 169px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 175px;
   }
 
+  .contact {
+    margin-bottom: 0;
+    padding-top: 165px;
+    padding-bottom: 64px;
+
+    background-repeat: repeat-x;
+    background-position: 293px 0;
+    background-size: 1043px 24px;
+  }
 
   .contact__map {
     position: absolute;
-    top: -73px;
+    top: 94px;
     right: 0;
 
     order: 2;
@@ -226,8 +237,9 @@
   }
 
   .contact__write {
+    width: 230px;
     margin-top: 39px;
-    margin-left: 169px;
+    margin-left: 175px;
   }
 
   .contact__wrapper {
@@ -235,14 +247,15 @@
   }
 
   .contact__title {
-    padding-left: 175px;
+    margin: 0;
+    padding-left: 169px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
   .contact__title::after {
-    top: 0;
+    top: -9px;
     left: 63px;
   }
 

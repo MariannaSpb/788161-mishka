@@ -39,8 +39,6 @@
   }
 }
 
-
-
 .form-field__input--check + label::before {
   content: "";
 
@@ -209,9 +207,9 @@
     margin-bottom: 0;
   }
 
-  .form-field__label--text {
-    width: 109px;
-  }
+  // .form-field__label--text {
+  //   width: 109px;
+  // }
 
   .form-field__label--text-surname,
   .form-field__label--text-patronymic {

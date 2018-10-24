@@ -86,6 +86,12 @@
 }
 
 @media (min-width: 1150px) {
+  .page-header__logo-img {
+    padding-top: 0;
+    padding-right: 23px;
+    padding-bottom: 0;
+  }
+
   .page-header__logo {
     justify-content: center;
     width: max-content;

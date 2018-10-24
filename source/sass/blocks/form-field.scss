@@ -134,7 +134,9 @@
 
   resize: none;
 }
+
 .form-field__required--text {
+  order: 1;
   margin: 0;
   padding-bottom: 30px;
 
@@ -157,28 +159,36 @@
 
 .form-field__email-image {
   position: absolute;
-  top: 19px;
-  right: 6px;
+  top: 15px;
+  right: 4px;
 }
 
 .form-field__phone-image {
   position: absolute;
-  top: 19px;
-  right: 11px;
+  top: 14px;
+  right: 9px;
 }
 
 @media (min-width: 768px) {
-  .form-field__required {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 0 50px;
+  .form-field {
+    &--contact {
+      width: 100%;
+    }
   }
 
-  .form-field__required-text {
-    order: 2;
-    margin: 0;
+  .form-field__required {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    padding-bottom: 50px;
+  }
+
+  .form-field__required--text {
+    padding: 0;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form-field__user-phone,
@@ -187,48 +197,115 @@
   }
 
   .form-field__user-wishes {
+    box-sizing: border-box;
     width: 500px;
-    height: 140px;
+    min-height: 140px;
   }
 
   .form-field--user-block {
     flex-direction: row-reverse;
     /* width: 498px; */
     align-items: baseline;
+    margin-bottom: 0;
   }
 
   .form-field__label--text {
-    width: 76px;
+    width: 109px;
   }
 
   .form-field__label--text-surname,
   .form-field__label--text-patronymic {
-    width: 145px;
+    width: 203px;
   }
 
   .form-field__input--radio:checked + label::after {
-    top: 17px;
-    left: 17px;
+    top: 9px;
+    left: 15px;
 
     width: 22px;
     height: 22px;
   }
 
-  .form-field__input--radio + .form-field__label::before {
-    width: 52px;
-    height: 52px;
-  }
+  .form-field__input--check:checked + label::after {
+    top: 18px;
+    left: 10px;
 
-  .form-field__label {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 18px;
+    width: 33px;
+    height: 24px;
   }
 
   .form-field__input--check + label::before {
+    // position: static;
+    position: absolute;
+    top: 5px;
+    left: 1px;
+
     width: 50px;
     height: 49px;
+    // margin-right: 26px;
   }
+
+
+  .form-field__input--radio + .form-field__label::before {
+    // position: static;
+    position: absolute;
+    top: -7px;
+
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .form-field__label {
+    display: flex;
+    width: 260px;
+
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
+
+    &--check {
+      align-items: center;
+      width: 180px;
+      height: 50px;
+      margin-bottom: 20px;
+      padding-top: 5px;
+      padding-left: 79px;
+    }
+
+    &--radio {
+      margin-bottom: 28px;
+      padding-left: 79px;
+    }
+
+    &--text {
+      width: 109px;
+    }
+
+    &--text-surname {
+      width: 195px;
+    }
+
+    &--text-patronymic {
+      width: 201px;
+    }
+  }
+
+
+  .form-field__phone-image {
+    top: 15px;
+    right: 26px;
+  }
+
+  .form-field__email-image {
+    top: 19px;
+    right: 21px;
+  }
+
+  .form-block__legend::after {
+    display: none;
+  }
+
 
   .form-field__text::-webkit-input-placeholder,
   .form-field__user-phone::-webkit-input-placeholder,
@@ -246,11 +323,56 @@
   }
 }
 
+@media (min-width: 1150px) {
+  .form-field__text:hover,
+  .form-field__user-email:hover,
+  .form-field__user-phone:hover {
+    border-color: #62d1ba;
+  }
 
-@media (min-width: 768px) {
-  .form-field__required-text {
-    font-size: 17px;
-    line-height: 30px;
+  .form-field__label--check {
+    padding-left: 82px;
+  }
+
+  .form-field__input--check + label::before {
+    top: 3px;
+    left: 4px;
+  }
+
+  .form-field--contact {
+    width: 700px;
+  }
+
+  .form-field__text,
+  .form-field__user-email,
+  .form-field__user-phone {
+    padding-left: 12px;
+  }
+
+  .form-field__email-image {
+    top: 15px;
+    right: 6px;
+  }
+
+  .form-field__phone-image {
+    top: 13px;
+    right: 9px;
+  }
+
+  .form-field--user-block {
+    width: 700px;
+  }
+
+  .form-field__label--text {
+    width: 83px;
+  }
+
+  .form-field__label--text-surname {
+    width: 155px;
+  }
+
+  .form-field__label--text-patronymic {
+    width: 158px;
   }
 
   .form-field__user-wishes {
@@ -258,17 +380,17 @@
   }
 
   .form-field__required {
-    width: 700px;
-    margin: auto;
-    padding: 0;
-  }
-}
+    padding-top: 0;
+    padding-right: 219px;
+    padding-bottom: 50px;
+    padding-left: 224px;
 
-
-@media (min-width: 1150px) {
-  .form-field__text:hover,
-  .form-field__user-email:hover,
-  .form-field__user-phone:hover {
-    border-color: #62d1ba;
+    &--text {
+      width: 306px;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
   }
 }

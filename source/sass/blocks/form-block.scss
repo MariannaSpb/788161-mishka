@@ -57,42 +57,151 @@
 
 @media (min-width: 768px) {
   .form-block {
+    margin: 0;
+    padding: 50px;
+
     border: none;
+
+    &--color {
+      padding-top: 31px;
+      padding-right: 29px;
+      padding-bottom: 34px;
+
+      background-color: #f1f1f1;
+    }
+    &--user {
+      padding-top: 31px;
+      padding-right: 29px;
+      padding-bottom: 30px;
+    }
+
+    &--type {
+      padding-top: 44px;
+      padding-bottom: 28px;
+    }
+
+    &--contact {
+      padding: 0;
+    }
+
+    &--wishes {
+      padding-top: 27px;
+      padding-bottom: 53px;
+    }
+
+    &--decoration {
+      padding-top: 38px;
+      padding-bottom: 62px;
+
+      background-color: #f1f1f1;
+    }
   }
 
   .form-block__wrapper {
     display: flex;
     align-items: baseline;
-    padding: 0 50px;
   }
 
   .form-block__legend {
     width: 167px;
+    margin-top: 32px;
 
-    &--type,
-    &--name {
-      width: 167px;
+    &--color {
+      width: 462px;
+    }
+
+    &--contact {
+      width: 241px;
     }
   }
 
   .form-block__container--checkbox {
     display: flex;
+    flex-wrap: wrap;
   }
 
+  .form-block__container--checkbox-column {
+    display: flex;
+  }
 
   .form-block__container--name {
-    width: 500px;
+    width: 502px;
   }
 }
 
 @media (min-width: 1150px) {
   .form-block__container--checkbox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+
+  .form-block--type {
+    padding-top: 27px;
+    padding-right: 0;
+    padding-bottom: 34px;
+    padding-left: 0;
   }
 
 
+  .form-block--color {
+    padding-top: 28px;
+    padding-right: 0;
+    padding-bottom: 34px;
+    padding-left: 0;
+  }
+
+  .form-block--user {
+    padding-top: 31px;
+    padding-right: 0;
+    padding-bottom: 34px;
+    padding-left: 0;
+  }
+
+  .form-block__legend {
+    &--type {
+      width: 113px;
+    }
+
+    &--color {
+      width: 115px;
+    }
+
+    &--name {
+      width: 119px;
+    }
+
+    &--contact {
+      width: 116px;
+      margin-top: 28px;
+      padding-bottom: 30px;
+    }
+
+    &--wishes {
+      width: 117px;
+    }
+  }
+
+
+  .form-block__wrapper {
+    padding: 0 110px;
+  }
+
   .form-block__container--checkbox-column {
     display: flex;
+  }
+
+  .form-block--decoration {
+    padding-right: 0;
+    padding-bottom: 42px;
+    padding-left: 0;;
+  }
+
+  .form-block--wishes {
+    padding-top: 31px;
+    padding-right: 0;
+    padding-bottom: 52px;
+    padding-left: 0;
   }
 }

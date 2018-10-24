@@ -99,10 +99,11 @@
             </tr>
           </table>
           <p class="week-product__image-wrapper">
-            <picture>
-                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-                <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фотография товара">
+            <picture class="week-product__pictures">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                alt="Фотография товара">
             </picture>
           </p>
           <p class="week-product__price">Цена: 990 руб.</p>
@@ -203,7 +204,12 @@
           </div>
         </div>
         <div class="contact__map">
-          <img class="contact__img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="карта">
+          <picture class="contact__map-picture">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg">
+            <img class="contact__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="карта">
+          </picture>
+
         </div>
         <div class="contact-wrapper">
           <a class="button contact__write" href="#">Напишите нам</a>

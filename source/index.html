@@ -100,10 +100,9 @@
           </table>
           <p class="week-product__image-wrapper">
             <picture class="week-product__pictures">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-                alt="Фотография товара">
+              <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фотография товара">
             </picture>
           </p>
           <p class="week-product__price">Цена: 990 руб.</p>
@@ -151,17 +150,17 @@
           <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков,
             как у популярных инстамамочек.
-            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp мои фотографии сразу стали более стильными, а
+            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp; мои фотографии сразу стали более стильными, а
             также
             набирают больше лайков!</p>
         </div>
-        <div class="review__autor-block">
-          <p class="review__autor">Анастасия Красильникова</p>
-          <a class="review__link" href="#">
+        <div class="review review__autor-block">
+          <p class="review review__autor">Анастасия Красильникова</p>
+          <a class="review review__link" href="#">
             @misssssiskras
           </a>
         </div>
-        <div class="review__pagination">
+        <div class="review review__pagination">
           <button class="review__button review__button--previous" type="button">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003"
@@ -177,7 +176,7 @@
             </svg>
           </button>
         </div>
-        <a class="button review__write" href="#">
+        <a class="button review review__write" href="#">
           Написать
         </a>
       </section>
@@ -192,7 +191,7 @@
             <ul class="contact__list">
               <li class="contact__item">
                 e-mail:</li>
-              <li class="contact__item contact__item--link"><a class="contact__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+              <li class="contact__item contact__item--link"><a class="contact__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </li>
             </ul>
             <ul class="contact__list">
@@ -205,9 +204,9 @@
         </div>
         <div class="contact__map">
           <picture class="contact__map-picture">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg">
-            <img class="contact__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="карта">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contact__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="карта">
           </picture>
 
         </div>
@@ -263,7 +262,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social-list__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
               <span class="visually-hidden">Твиттер</span>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168"
@@ -290,19 +289,23 @@
       </div>
     </div>
   </footer>
-  <section class="modal-window">
-    <h2 class="modal-window__title">Добавить в корзину</h2>
-    <p class="modal-window__text">Выберете размер:</p>
-    <div class="modal-window__size-list">
-      <div class="modal-window__button-wrapper">
-        <button class="modal-window__button modal-window__button--s" type="button">S</button>
-        <button class="modal-window__button modal-window__button--m" type="button">M</button>
-        <button class="modal-window__button modal-window__button--l" type="button">L</button>
-      </div>
-      <a class="modal-window__add" href="#">
-        Добавить
-      </a>
-    </div>
+  <section class="modal-window modal-window--close">
+    <form class="modal-window__form" method="post" action="https://echo.htmlacademy.ru">
+      <h2 class="modal-window__title">Добавить в корзину</h2>
+      <p class="modal-window__description">Выберете размер:</p>
+      <div class="modal-window__size-block">
+          <input type="radio" class="modal-window__radio"  value="s" name="size" id="size-s" checked>
+          <label class="modal-window__label" for="size-s">S</label>
+          <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m">
+          <label class="modal-window__label" for="size-m">M</label>
+          <input type="radio" class="modal-window__radio" value="l" name="size" id="size-l">
+          <label class="modal-window__label" for="size-l">L</label>
+        </div>
+        <button class="modal-window__button"  type="submit">
+          Добавить
+        </button>
+    </form>
+
   </section>
   <script src="js/scripts.js"></script>
 </body>

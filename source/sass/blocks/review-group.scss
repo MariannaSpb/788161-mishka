@@ -39,12 +39,12 @@
     margin-bottom: 0;
     padding-top: 81px;
     padding-right: 50px;
-    padding-bottom: 68px;
+    padding-bottom: 113px;
     padding-left: 50px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: 0 0;
     background-size: 350px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -73,13 +73,13 @@
 
   .review-group {
     padding-right: 0;
-    padding-bottom: 114px;
+    padding-bottom: 161px;
     padding-left: 0;
     // background: url("../img/review@1x.jpg") no-repeat 0 0;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: 0 0;
     background-size: 350px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

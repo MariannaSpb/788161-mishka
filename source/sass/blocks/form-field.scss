@@ -244,7 +244,10 @@
 
   .form-field__user-phone,
   .form-field__user-email {
-    width: 501px;
+    width: 487px;
+    margin-top: 5px;
+    padding-bottom: 0;
+    padding-left: 12px;
 
     background-color: #f1f1f1;
   }
@@ -264,7 +267,7 @@
 
 
   .form-field__input--radio:checked + label::after {
-    top: 9px;
+    top: 26px;
     left: 15px;
 
     width: 22px;
@@ -272,7 +275,7 @@
   }
 
   .form-field__input--check:checked + label::after {
-    top: 18px;
+    top: 13px;
     left: 10px;
 
     width: 33px;
@@ -290,9 +293,7 @@
 
 
   .form-field__input--check + label::before {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
 
     width: 50px;
     height: 49px;
@@ -300,8 +301,7 @@
 
 
   .form-field__input--radio + .form-field__label::before {
-    position: absolute;
-    top: -7px;
+    position: relative;
 
     flex-shrink: 0;
     width: 48px;
@@ -311,6 +311,7 @@
   .form-field__label {
     display: flex;
     width: 260px;
+    // padding: 0;
 
     font-weight: 700;
     font-size: 19px;
@@ -318,16 +319,17 @@
 
     &--check {
       align-items: center;
-      width: 180px;
+      width: 260px;
       height: 50px;
-      margin-bottom: 20px;
-      padding-top: 5px;
-      padding-left: 79px;
+      margin-bottom: 24px;
+      padding-top: 0;
+      padding-left: 0;
     }
 
     &--radio {
+      width: 349px;
       margin-bottom: 28px;
-      padding-left: 79px;
+      padding-left: 0;
     }
 
     &--text {
@@ -340,8 +342,17 @@
     }
   }
 
+  .form-field__check {
+    margin-left: 25px;
+  }
+
+  .form-field__type-product {
+    margin-top: 17px;
+    margin-left: 29px;
+  }
+
   .form-field__phone-image {
-    top: 15px;
+    top: 21px;
     right: 26px;
   }
 

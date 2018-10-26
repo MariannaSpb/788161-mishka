@@ -167,7 +167,6 @@
   right: 9px;
 }
 
-
 @media (min-width: 768px) {
   .form-field {
     &--contact {
@@ -192,11 +191,6 @@
 
   .form-field__user-phone,
   .form-field__user-email {
-    width: 487px;
-    margin-top: 5px;
-    padding-bottom: 0;
-    padding-left: 12px;
-
     background-color: #f1f1f1;
   }
 
@@ -208,12 +202,22 @@
 
   .form-field--user-block {
     flex-direction: row-reverse;
+    /* width: 498px; */
     align-items: baseline;
     margin-bottom: 0;
   }
 
+  // .form-field__label--text {
+  //   width: 109px;
+  // }
+
+  .form-field__label--text-surname,
+  .form-field__label--text-patronymic {
+    width: 203px;
+  }
+
   .form-field__input--radio:checked + label::after {
-    top: 26px;
+    top: 9px;
     left: 15px;
 
     width: 22px;
@@ -221,33 +225,29 @@
   }
 
   .form-field__input--check:checked + label::after {
-    top: 13px;
+    top: 18px;
     left: 10px;
 
     width: 33px;
     height: 24px;
   }
 
-  .form-field__text--name {
-    width: 428px;
-    padding-left: 10px;
-  }
-
-  .form-field__text {
-    padding-left: 12px;
-  }
-
-
   .form-field__input--check + label::before {
-    position: relative;
+    // position: static;
+    position: absolute;
+    top: 5px;
+    left: 1px;
 
     width: 50px;
     height: 49px;
+    // margin-right: 26px;
   }
 
 
   .form-field__input--radio + .form-field__label::before {
-    position: relative;
+    // position: static;
+    position: absolute;
+    top: -7px;
 
     flex-shrink: 0;
     width: 48px;
@@ -257,7 +257,6 @@
   .form-field__label {
     display: flex;
     width: 260px;
-    // padding: 0;
 
     font-weight: 700;
     font-size: 19px;
@@ -265,40 +264,34 @@
 
     &--check {
       align-items: center;
-      width: 260px;
+      width: 180px;
       height: 50px;
-      margin-bottom: 24px;
-      padding-top: 0;
-      padding-left: 0;
+      margin-bottom: 20px;
+      padding-top: 5px;
+      padding-left: 79px;
     }
 
     &--radio {
-      width: 349px;
       margin-bottom: 28px;
-      padding-left: 0;
+      padding-left: 79px;
     }
 
     &--text {
-      width: 77px;
+      width: 109px;
     }
 
-    &--text-surname,
+    &--text-surname {
+      width: 195px;
+    }
+
     &--text-patronymic {
-      width: 171px;
+      width: 201px;
     }
   }
 
-  .form-field__check {
-    margin-left: 25px;
-  }
-
-  .form-field__type-product {
-    margin-top: 17px;
-    margin-left: 29px;
-  }
 
   .form-field__phone-image {
-    top: 21px;
+    top: 15px;
     right: 26px;
   }
 
@@ -326,14 +319,6 @@
     font-size: 17px;
     line-height: 16px;
   }
-
-  .form-field__input-wrap {
-    width: 501px;
-  }
-
-  // .form-field__label--text {
-  //   width: 83px;
-  // }
 }
 
 @media (min-width: 1150px) {
@@ -343,29 +328,8 @@
     border-color: #62d1ba;
   }
 
-  .form-field__check {
-    margin-left: 30px;
-  }
-
-  .form-field__label--radio {
-    padding-top: 15px;
-  }
-
-  .form-field__type-product {
-    margin-top: 17px;
-    margin-left: 29px;
-  }
-
-
-  .form-field__input--check:checked + label::after {
-    top: 23%;
-
-    transform: translateX(10%);
-  }
-
-  .form-field__input--radio:checked + label::after {
-    top: 31px;
-    left: 16px;
+  .form-field__label--check {
+    padding-left: 82px;
   }
 
   .form-field__input--check + label::before {
@@ -377,36 +341,20 @@
     width: 700px;
   }
 
-  .form-field__text {
-    box-sizing: border-box;
-    width: 579px;
-    padding-left: 20px;
-
-    &--name {
-      width: 628px;
-      padding-left: 18px;
-    }
-  }
-
+  .form-field__text,
   .form-field__user-email,
   .form-field__user-phone {
-    box-sizing: border-box;
-    width: 699px;
     padding-left: 12px;
   }
 
-  .form-field__input-wrap {
-    width: 685px;
-  }
-
   .form-field__email-image {
-    top: 16px;
-    right: -10px;
+    top: 15px;
+    right: 6px;
   }
 
   .form-field__phone-image {
-    top: 17px;
-    right: -6px;
+    top: 13px;
+    right: 9px;
   }
 
   .form-field--user-block {
@@ -414,13 +362,15 @@
   }
 
   .form-field__label--text {
-    // width: 83px;
-    width: 72px;
+    width: 83px;
   }
 
-  .form-field__label--text-surname,
+  .form-field__label--text-surname {
+    width: 155px;
+  }
+
   .form-field__label--text-patronymic {
-    width: 124px;
+    width: 158px;
   }
 
   .form-field__user-wishes {

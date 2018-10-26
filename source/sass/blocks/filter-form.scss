@@ -2,17 +2,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
 }
 
 @media (min-width: 768px) {
   .filter-form {
     padding: 0;
-  }
-
-  .filter-form__decor:nth-child(even) {
-    width: 100%;
-
-    background-color: #f1f1f1;
   }
 }

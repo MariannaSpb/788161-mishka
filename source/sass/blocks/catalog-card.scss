@@ -92,4 +92,18 @@
   .catalog-card__modal-link:active path {
     fill: #d0f1ea;
   }
+
+  .catalog-card__title-link {
+    padding-top: 22px;
+  }
+
+  .catalog__cart-image {
+    padding-right: 0;
+    padding-bottom: 6px;
+  }
+
+
+  .catalog-card__price {
+    padding-bottom: 5px;
+  }
 }

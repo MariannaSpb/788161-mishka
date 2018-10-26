@@ -399,8 +399,31 @@
     border-color: #62d1ba;
   }
 
-  .form-field__label--check {
-    padding-left: 82px;
+  .form-field__check {
+    margin-left: 30px;
+  }
+
+  .form-field__label--radio {
+    padding-top: 15px;
+  }
+
+  .form-field__type-product {
+    margin-top: 17px;
+    margin-left: 29px;
+  }
+
+
+  .form-field__input--check:checked + label::after {
+    top: 23%;
+
+    transform: translateX(10%);
+  }
+
+
+
+  .form-field__input--radio:checked + label::after {
+    top: 31px;
+    left: 16px;
   }
 
   .form-field__input--check + label::before {
@@ -415,27 +438,18 @@
   .form-field__text {
     box-sizing: border-box;
     width: 579px;
+    padding-left: 20px;
 
     &--name {
       width: 628px;
-      padding-left: 10px;
+      padding-left: 18px;
     }
   }
-
-
-  // .form-field__text {
-  //   width: 577px;
-
-  //   &--name {
-  //     width: 628px;
-  //   }
-  // }
-
 
   .form-field__user-email,
   .form-field__user-phone {
     box-sizing: border-box;
-    width: 685px;
+    width: 699px;
     padding-left: 12px;
   }
 
@@ -444,12 +458,12 @@
   }
 
   .form-field__email-image {
-    top: 8px;
+    top: 16px;
     right: -10px;
   }
 
   .form-field__phone-image {
-    top: 9px;
+    top: 17px;
     right: -6px;
   }
 

@@ -23,6 +23,7 @@
 
 .contact__wrapper {
   padding: 0 30px;
+  padding-top: 30px;
   padding-bottom: 38px;
 }
 
@@ -49,6 +50,13 @@
   width: 320px;
   height: 457px;
   overflow: hidden;
+
+  background: url("../img/icon-map-pin.svg") no-repeat 52% 40%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobilet@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .contact__write {
@@ -159,8 +167,6 @@
 
   .contact__map {
     width: 100%;
-    // background-image: url("../img/map-tablet@1x.jpg");
-    // background-repeat: no-repeat;
 
     background: url("../img/icon-map-pin.svg") no-repeat 52% 40%, url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
 
@@ -170,12 +176,6 @@
       background-size: 768px auto;
     }
   }
-
-  // .contact__write {
-  //   align-items: center;
-  //   align-self: center;
-  //   width: 226px;
-  // }
 }
 
 

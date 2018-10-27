@@ -9,8 +9,8 @@
 }
 
 .page-footer__social {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 26px;
 }
 
 .page-footer__logo {
@@ -29,11 +29,11 @@
     display: block;
     flex-shrink: 0;
 
-    &:hover path {
+    &:hover {
       fill: #46c1ae;
     }
 
-    &:active path {
+    &:active {
       opacity: 0.3;
     }
   }

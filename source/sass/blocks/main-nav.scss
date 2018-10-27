@@ -72,19 +72,18 @@
   position: absolute;
   top: 32px;
   left: 32px;
+
+  fill: #d3d2d2;
 }
 
 .main-nav__icon-basket {
   position: absolute;
   top: 30px;
   left: 31px;
+
+  fill: #d3d2d2;
 }
 
-// @media (min-width: 320px) {
-//   .main-nav--closed .main-nav__item {
-//     display: none;
-//   }
-// }
 
 @media (min-width: 768px) {
   .main-nav {
@@ -204,10 +203,11 @@
   }
 
 
-  .main-nav__link--search:hover .main-nav__icon-search path,
-  .main-nav__link--basket:hover .main-nav__icon-basket path {
+  .main-nav__link--search:hover .main-nav__icon-search,
+  .main-nav__link--basket:hover .main-nav__icon-basket {
     fill: #63d1bb;
   }
+
 
   .main-nav__link--search:active .main-nav__icon-search path,
   .main-nav__link--search:focus .main-nav__icon-search path,

@@ -26,4 +26,14 @@
     margin-bottom: 0;
     padding-left: 73px;
   }
+
+
+  .social__link:hover .social__icon,
+  .social__link:focus .social__icon {
+    fill: #46c1ae;
+  }
+
+  .social__link:active .social__icon {
+    fill: #bde3dd;
+  }
 }

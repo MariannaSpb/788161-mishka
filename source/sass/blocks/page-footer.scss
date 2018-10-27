@@ -28,14 +28,28 @@
   .page-footer__logo {
     display: block;
     flex-shrink: 0;
+  }
 
-    &:hover {
-      fill: #46c1ae;
-    }
+  .page-footer__social {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  .page-footer__logo[href]:hover .page-footer__logo {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo[href]:active .page-footer__logo {
+    opacity: 0.3;
+  }
+
+
+  .page-footer__copyright:hover .copyright__logo {
+    fill: #46c1ae;
+  }
+
+  .page-footer__copyright:active .copyright__logo {
+    fill: #bde3dd;
   }
 
   .page-footer__wrapper {
@@ -51,5 +65,10 @@
   .page-footer__wrapper {
     width: 1150px;
     padding: 0 50px;
+  }
+
+  .page-footer__social {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

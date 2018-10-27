@@ -238,12 +238,14 @@
             </ul>
           </div>
         </div>
-        <div class="contact__map">
-          <picture class="contact__map-picture">
+        <div class="contact__map" id="map">
+          <div class="contacts__map-wrapper no-js">
+          </div>
+          <!-- <picture class="contact__map-picture">
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
             <img class="contact__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
-          </picture>
+          </picture> -->
         </div>
         <div class="contact-wrapper">
           <a class="button contact__write" href="#">Напишите нам</a>
@@ -285,8 +287,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="copyright__text">Разработано</span>
           <svg class="copyright__logo" width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
@@ -312,7 +313,9 @@
     </form>
 
   </section>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCY7sS8EmrITQ9scTNFK0uhIqU1A2zfat4"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 

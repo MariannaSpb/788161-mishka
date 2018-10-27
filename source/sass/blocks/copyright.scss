@@ -58,9 +58,35 @@
 
   .copyright__title {
     margin: 0;
+
+    &:hover {
+      color: #666666;
+
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .copyright::before {
     display: none;
+  }
+
+  .page-footer__copyright:hover .copyright__logo path {
+    fill: #46c1ae;
+  }
+
+  .page-footer__copyright:active .copyright__logo path {
+    fill: #bde3dd;
+  }
+
+  .social__link:hover .social__icon path {
+    fill: #46c1ae;
+  }
+
+  .social__link:active .social__icon path {
+    fill: #bde3dd;
   }
 }

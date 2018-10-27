@@ -66,6 +66,18 @@
   position: absolute;
   top: 35px;
   left: 80px;
+
+  cursor: pointer;
+}
+
+.production__video-play:focus,
+.production__video-play:hover {
+  transform: scale(1.2);
+}
+
+.production__video-play:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }
 
 .production__button {
@@ -140,6 +152,18 @@
     position: absolute;
     top: 40%;
     left: 43%;
+
+    cursor: pointer;
+  }
+
+  .production__video-play:focus,
+  .production__video-play:hover {
+    transform: scale(1.2);
+  }
+
+  .production__video-play:active {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
 
@@ -189,7 +213,11 @@
   .production__video-play {
     top: 187px;
     left: -400px;
+
+    cursor: pointer;
   }
+
+
 
   .production__description-block-video {
     display: flex;

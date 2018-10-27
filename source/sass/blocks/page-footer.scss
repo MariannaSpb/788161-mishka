@@ -28,6 +28,14 @@
   .page-footer__logo {
     display: block;
     flex-shrink: 0;
+
+    &:hover path {
+      fill: #46c1ae;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__wrapper {

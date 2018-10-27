@@ -123,6 +123,10 @@
     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
+  .catalog__production-wrapper:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   .catalog__production-wrapper {
     margin: 0;
     margin-bottom: 98px;

@@ -4,6 +4,12 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
+
 a {
   text-decoration: none;
 }

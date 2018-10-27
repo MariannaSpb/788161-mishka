@@ -3,9 +3,9 @@
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
+  margin-bottom: 0;
   padding: 0 30px;
-  padding-bottom: 54px;
+  padding-bottom: 29px;
 
   color: #000000;
 
@@ -72,6 +72,7 @@
   }
 
   .review-group {
+    padding-top: 78px;
     padding-right: 0;
     padding-bottom: 161px;
     padding-left: 0;
@@ -84,7 +85,8 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-size: cover;
+      background-position: 0 0;
+      background-size: 350px;
     }
   }
 }

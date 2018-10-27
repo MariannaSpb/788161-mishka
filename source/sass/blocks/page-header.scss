@@ -18,8 +18,6 @@
   padding-bottom: 22px;
 }
 
-
-// остановилась тут
 .page-header__button-humburger {
   position: absolute;
   top: 28px;
@@ -27,47 +25,8 @@
 
   width: 26px;
   height: 24px;
-
-  // background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
-  // border: none;
 }
 
-
-.main-nav--closed .page-header__button-humburger {
-  position: absolute;
-  top: 31px;
-  right: 31px;
-
-  width: 21px;
-  height: 20px;
-
-  background: url("../img/icon-menu-open.svg") no-repeat #ffffff;
-  border: none;
-  cursor: pointer;
-}
-
-.main-nav--opened .page-header__button-humburger--close {
-  position: absolute;
-  top: 27px;
-  right: 27px;
-
-  width: 26px;
-  height: 24px;
-
-  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
-}
-
-
-.main-nav--nojs .main-nav__item {
-  display: block;
-}
-
-
-@media (max-width: 767px) {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-}
 
 @media (min-width: 768px) {
   .page-header__logo {
@@ -105,5 +64,14 @@
 
   .page-header {
     width: 1150px;
+  }
+
+
+  .page-header__logo[href]:hover {
+    opacity: 0.6;
+  }
+
+  .page-header__logo[href]:active {
+    opacity: 0.3;
   }
 }

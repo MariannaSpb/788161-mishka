@@ -12,6 +12,11 @@
   position: relative;
 }
 
+.form-field__phone-image,
+.form-field__email-image {
+  fill: #c1c1c1;
+}
+
 
 .form-field__label {
   display: block;
@@ -339,7 +344,13 @@
 @media (min-width: 1150px) {
   .form-field__text:hover,
   .form-field__user-email:hover,
-  .form-field__user-phone:hover {
+  .form-field__user-phone:hover,
+  .form-field__text:active,
+  .form-field__user-email:active,
+  .form-field__user-phone:active,
+  .form-field__text:focus,
+  .form-field__user-email:focus,
+  .form-field__user-phone:focus {
     border-color: #62d1ba;
   }
 
@@ -354,6 +365,33 @@
   .form-field__type-product {
     margin-top: 17px;
     margin-left: 29px;
+  }
+
+  .form-field__input--check:focus + .form-field__label::before,
+  .form-field__input--radio:focus + .form-field__label::before {
+    border-color: #62d1ba;
+  }
+
+  .form-block--color .form-field__label:hover::before,
+  .form-block--color .form-field__label:focus::before {
+    border-color: #62d1ba;
+  }
+
+  .form-block--color .form-field__label:active::before,
+  .form-block--type .form-field__label:active::before {
+    border-color: #c7c7c7;
+  }
+
+
+  .form-block--color:focus + .form-field__label::before,
+  .form-block--type .form-field__label:hover::before,
+  .form-block--type:focus + .form-field__label::before {
+    border-color: #62d1ba;
+  }
+
+
+  .form-block--type .form-field__label:active::before {
+    border-color: #c7c7c7;
   }
 
 
@@ -409,9 +447,30 @@
     right: -6px;
   }
 
+  .form-field__email-image :hover,
+  .form-field__phone-image:hover {
+    fill: #62d1ba;
+  }
+
+
+  .form-field__input-wrap:hover .form-field__phone-image,
+  .form-field__input-wrap:hover .form-field__email-image,
+  .form-field__input-wrap:focus .form-field__phone-image,
+  .form-field__input-wrap:focus .form-field__email-image {
+    fill: #62d1ba;
+  }
+
   .form-field--user-block {
     width: 700px;
   }
+
+
+  .form-field__user-wishes:hover,
+  .form-field__user-wishes:active,
+  .form-field__user-wishes:focus {
+    box-shadow: inset 0 0 0 2px #62d1ba;
+  }
+
 
   .form-field__label--text {
     // width: 83px;

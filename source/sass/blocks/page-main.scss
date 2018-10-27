@@ -28,7 +28,9 @@
   }
 }
 
-.page-main__item--light-green::after {
+// fhrhfiw
+// .page-main__item--light-green::after
+.page-main__link--interior::after {
   content: "";
 
   position: absolute;
@@ -43,7 +45,7 @@
   background-repeat: no-repeat;
 }
 
-.page-main__item--dark-green::after {
+.page-main__link--toys::after {
   content: "";
 
   position: absolute;
@@ -163,12 +165,12 @@
     width: 334px;
   }
 
-  .page-main__item--light-green::after {
+  .page-main__link--interior::after {
     top: 29px;
     left: 258px;
   }
 
-  .page-main__item--dark-green::after {
+  .page-main__link--toys::after {
     top: 31px;
     left: 240px;
   }
@@ -268,20 +270,19 @@
   }
 
 
-  .page-main__item--light-green::after {
+  .page-main__link--interior::after {
     top: 30px;
     left: 449px;
   }
 
-  .page-main__item--dark-green::after {
+  .page-main__link--toys::after {
     top: 33px;
     left: 428px;
   }
 
 
-  .page-main__item--light-green:active,
-  .page-main__item--light-green:hover {
-    // transform: translateY(-5px);
+  .page-main__link--interior:active,
+  .page-main__link--interior:hover {
     margin-top: -5px;
     padding-bottom: 31px;
 
@@ -289,7 +290,8 @@
   }
 
 
-  .page-main__link:hover .page-main__link::after {
+  .page-main__item:hover .page-main__link--interior::after,
+  .page-main__item:hover .page-main__link--toys::after {
     opacity: 0.5;
   }
 
@@ -297,26 +299,13 @@
     opacity: 0.3;
   }
 
-  .page-main__item--dark-green:active,
-  .page-main__item--dark-green:hover {
+  .page-main__link--toys:active,
+  .page-main__link--toys:hover {
     margin-top: -5px;
     padding-bottom: 31px;
 
     background-color: #46c1ae;
   }
-
-  .page-main__item--light-green:active .page-main__link,
-  .page-main__item--light-green:active .page-main__link::after,
-  .page-main__item--dark-green:active .page-main__link,
-  .page-main__item--dark-green:active .page-main__link::after::after {
-    opacity: 0.3;
-  }
-
-  // .page-main__item--dark-green:active .page-main__link::after,
-  // .page-main__item--light-green:active .page-main__link::after {
-  //   top: 36px;
-  // }
-
 
   .page-main__description {
     width: 700px;

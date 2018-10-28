@@ -28,8 +28,10 @@
   }
 }
 
-// fhrhfiw
-// .page-main__item--light-green::after
+.page-main__link-text {
+  width: 100px;
+}
+
 .page-main__link--interior::after {
   content: "";
 
@@ -265,6 +267,8 @@
   }
 
   .page-main__wrapper {
+    margin-top: -43px;
+
     background-color: #f9f9f9;
     border-top: 1px solid #ececec;
   }

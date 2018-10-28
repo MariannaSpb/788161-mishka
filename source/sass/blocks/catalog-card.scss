@@ -8,9 +8,7 @@
   color: #000000;
 }
 
-// .catalog__item {
-//   margin-bottom: 34px;
-// }
+
 .catalog__cart-image {
   fill: #c1c1c1;
 }
@@ -39,8 +37,6 @@
 
     font-size: 15px;
     line-height: 30px;
-
-    // border: 1px #ececec solid;
   }
 
   .catalog__cart-image {
@@ -87,7 +83,6 @@
   .catalog-card__title:active {
     opacity: 0.3;
   }
-
 
 
   .catalog-card__modal-link:hover .catalog__cart-image {

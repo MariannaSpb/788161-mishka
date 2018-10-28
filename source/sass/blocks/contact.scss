@@ -46,56 +46,21 @@
   }
 }
 
+.contact__map {
+  width: 320px;
+}
 
-// .contacts__map-wrapper {
-//   width: 100%;
-//   height: 100%;
+.contact__map-wrapper {
+  width: 320px;
+  height: 457px;
+  overflow: hidden;
 
-//   background-image: url("../img/map-mobile@1x.jpg");
-//   background-repeat: no-repeat;
+  background: url("../img/icon-map-pin.svg") no-repeat 52% 40%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
 
-//   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//     background-image: url("../img/map-mobile@2x.jpg");
-//     background-size: 320px auto;
-//   }
-// }
-
-// .contacts__map-wrapper.no-js {
-//   position: relative;
-// }
-
-// .contacts__map-wrapper.no-js::after {
-//   content: "";
-
-//   position: absolute;
-//   top: 165px;
-//   left: 115px;
-
-//   display: block;
-//   width: 68px;
-//   height: 100px;
-
-//   background-image: url("../img/icon-map-pin.svg");
-//   background-repeat: no-repeat;
-// }
-
-
-// .contact__map {
-//   width: 320px;
-//   height: 457px;
-//   overflow: hidden;
-
-//   background: url("../img/icon-map-pin.svg") no-repeat 52% 40%, url("../img/map-mobile@1x.jpg") no-repeat 50% 50%;
-
-//   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-//     background-image: url("../img/map-mobile@2x.jpg");
-//     background-size: 320px auto;
-//   }
-// }
-
-.contacts__map {
-  width: 100%;
-  min-height: 457px;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 
@@ -126,9 +91,6 @@
   background-color: #62d1ba;
 }
 
-// .contact-wrapper {
-//   padding: 0 30px;
-// }
 
 @media (min-width: 768px) {
   .contact {
@@ -206,7 +168,11 @@
     }
   }
 
-  .contacts__map {
+  .contact__map {
+    width: 768px;
+  }
+
+  .contact__map-wrapper {
     width: 768px;
 
     background: url("../img/icon-map-pin.svg") no-repeat 52% 40%, url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
@@ -239,7 +205,12 @@
     background-size: 1043px 24px;
   }
 
-  .contacts__map {
+  .contact__map {
+    width: 550px;
+  }
+
+
+  .contact__map-wrapper {
     position: absolute;
     top: 14%;
     left: 50%;
@@ -252,7 +223,7 @@
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
-      background-size: 768px auto;
+      background-size: 1150px auto;
     }
   }
 

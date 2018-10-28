@@ -104,12 +104,10 @@ gulp.task("css", function () {
 
     ));
 
-
     gulp.task("server", function () {  // отслеживаем изменения в файлах и пересобираем проект
       server.init({
         server: "build/",
       });
-
 
       gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
       gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
@@ -120,6 +118,5 @@ gulp.task("css", function () {
       server.reload();
       done();
      });
-     gulp.task("start", gulp.series("build", "server"));
 
-
+    gulp.task("start", gulp.series("build", "server"));

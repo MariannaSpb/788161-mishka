@@ -80,6 +80,7 @@
   top: 0;
   left: 0;
 
+  display: flex;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
@@ -246,6 +247,7 @@
   .form-field__input--check + label::before {
     position: relative;
 
+    display: flex;
     width: 50px;
     height: 49px;
   }

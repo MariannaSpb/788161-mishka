@@ -7,6 +7,18 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var replace = require('gulp-replace-task');
+// var csso = require("gulp-csso");  // минификатор
+// var rename = require("gulp-rename"); // для переименования файла
+// var imagemin = require("gulp-imagemin"); // оптимизация картинок
+// var webp = require("gulp-webp"); //конвертация в webp
+// var svgstore = require("gulp-svgstore"); // создание свг спрайта
+// var posthtml = require("gulp-posthtml");  // шаблонизируем хтмл
+// var include = require("posthtml-include");// добавить в разметку
+// var del = require("del"); // перед новой сборкой удалить build
+
+
+
+
 
 
 

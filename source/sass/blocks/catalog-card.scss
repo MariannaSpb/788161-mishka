@@ -11,6 +11,9 @@
 // .catalog__item {
 //   margin-bottom: 34px;
 // }
+.catalog__cart-image {
+  fill: #c1c1c1;
+}
 
 .catalog-card__description {
   margin: 0;
@@ -85,11 +88,13 @@
     opacity: 0.3;
   }
 
-  .catalog-card__modal-link:hover path {
+
+
+  .catalog-card__modal-link:hover .catalog__cart-image {
     fill: #6dd4bf;
   }
 
-  .catalog-card__modal-link:active path {
+  .catalog-card__modal-link:active .catalog__cart-image {
     fill: #d0f1ea;
   }
 

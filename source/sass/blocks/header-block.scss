@@ -21,7 +21,7 @@
 @media (min-width: 768px) {
   .header-block {
     position: relative;
-
+    border-top: 1px solid #ececec;
     width: 768px;
     min-height: 235px;
     margin-top: -42px;
@@ -59,6 +59,7 @@
 @media (min-width: 1150px) {
   .header-block {
     width: 100%;
+    border-top: 1px solid #ececec;
     min-height: 255px;
     margin-top: -40px;
     margin-bottom: 0;

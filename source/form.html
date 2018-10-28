@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
+    <include  src="build/img/sprite.svg">
+    </include>
+    </div>
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="page-header__logo" href="index.html">
@@ -236,7 +237,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="copyright__text">Разработано</span>
+        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="copyright__text">Разработано</span>
           <svg class="copyright__logo" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
@@ -244,7 +246,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
   <script src="js/picturefill.min.js"></script>
 </body>
 

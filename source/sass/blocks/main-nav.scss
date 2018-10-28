@@ -10,7 +10,6 @@
 
 
 .main-nav__list {
-  // display: none;
   display: block;
   flex-direction: column;
   margin: 0;
@@ -28,7 +27,6 @@
 }
 
 .main-nav__user-navigation {
-  // display: none;
   display: block;
   flex-direction: column;
   margin: 0;
@@ -85,7 +83,6 @@
   fill: #d3d2d2;
 }
 
-// -------------------------------------------------
 
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__item {
@@ -124,7 +121,6 @@
   background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
 }
 
-// -----------------------------------------------
 
 @media (min-width: 768px) {
   .main-nav {
@@ -283,14 +279,11 @@
   .main-nav__link--border {
     margin-right: 34px;
     padding: 0;
-    // padding-top: 30px;
-    // padding-right: 36px;
   }
 
 
   .main-nav__list .main-nav__link {
     padding: 0;
-    // padding: 30px 37px 0 0;
 
     font-size: 17px;
     line-height: 30px;

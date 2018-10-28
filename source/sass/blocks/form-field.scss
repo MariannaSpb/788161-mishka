@@ -6,6 +6,7 @@
 
   border: none;
   border-bottom: 2px solid black;
+  outline: 0;
 }
 
 .form-field__input-wrap {
@@ -80,6 +81,7 @@
   top: 0;
   left: 0;
 
+  display: flex;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
@@ -125,7 +127,6 @@
 .form-field__button {
   width: 260px;
   margin: 0 auto;
-  // margin-top: 31px;
 }
 
 .form-field__user-wishes {
@@ -133,6 +134,7 @@
   padding: 15px;
 
   border: none;
+  outline: 0;
   box-shadow: inset 0 0 0 2px #444444;
 
   resize: none;
@@ -246,6 +248,7 @@
   .form-field__input--check + label::before {
     position: relative;
 
+    display: flex;
     width: 50px;
     height: 49px;
   }
@@ -335,10 +338,6 @@
   .form-field__input-wrap {
     width: 501px;
   }
-
-  // .form-field__label--text {
-  //   width: 83px;
-  // }
 }
 
 @media (min-width: 1150px) {

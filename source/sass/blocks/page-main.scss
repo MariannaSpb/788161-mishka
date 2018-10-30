@@ -1,5 +1,5 @@
 .page-main {
-  width: 320px;
+  margin: 0 auto;
 }
 
 .page-main__description {
@@ -52,6 +52,7 @@
   position: absolute;
   top: 22px;
   left: 233px;
+
   width: 62px;
   height: 62px;
 
@@ -66,6 +67,7 @@
 
 .page-main__link {
   position: relative;
+
   display: flex;
   box-sizing: border-box;
   padding: 27px 28px;
@@ -83,6 +85,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 320px;
+  margin: 0 auto;
 
   background-color: #fbfbfb;
   border-top: 1px solid #ececec;
@@ -120,8 +123,6 @@
 @media (min-width: 768px) {
   .page-main {
     position: relative;
-
-    width: 768px;
   }
 
   .page-main__wrapper {
@@ -228,9 +229,6 @@
     }
   }
 
-  .page-main {
-    width: 1150px;
-  }
 
   .page-main__title {
     width: 620px;
@@ -278,6 +276,7 @@
   .page-main__link--interior:hover {
     margin-top: -5px;
     padding-bottom: 31px;
+
     background-color: #59d5bc;
   }
 

@@ -21,11 +21,6 @@
   margin-bottom: 30px;
 }
 
-.catalog-card__link,
-.catalog-card__title-link {
-  display: block;
-}
-
 .catalog__price-block {
   display: flex;
   justify-content: space-between;
@@ -87,7 +82,9 @@
 
   .catalog__description-block {
     width: 258px;
-    height: 194px;
+    height: 100%;
+    // padding: 26px 32px 27px 25px;
+    // height: 194px;
     padding-top: 0;
     padding-right: 32px;
     padding-left: 24px;
@@ -107,6 +104,8 @@
 
   .catalog__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
   }
 
 

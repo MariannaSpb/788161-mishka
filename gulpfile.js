@@ -50,14 +50,14 @@ gulp.task("images", function () { // уменьшить картинки
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({
-        optimizationLevel: 3
+        optimizationLevel: 1
       }),
       imagemin.jpegtran({
         progressive: true
       }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 
@@ -66,7 +66,7 @@ gulp.task("webp", function () { // webp
     .pipe(webp({
       quality: 90
     }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () { //  svg спрайт
@@ -105,6 +105,7 @@ gulp.task("clean", function () { // удалить build перед  новой 
 gulp.task("build", gulp.series( // сборка
   "clean",
   "copy",
+  "webp",
   "css",
   "sprite",
   "html",

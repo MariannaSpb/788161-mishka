@@ -37,6 +37,19 @@
 }
 
 
+.form-field__text:-ms-input-placeholder,
+.form-field__user-phone:-ms-input-placeholder,
+.form-field__user-email:-ms-input-placeholder,
+.form-field__user-wishes:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #c7c7c7;
+}
+
+
 .form-field__input-wrap {
   position: relative;
 
@@ -363,6 +376,22 @@
 
     opacity: 1;
   }
+
+
+  .form-field__text:-ms-input-placeholder,
+  .form-field__user-phone:-ms-input-placeholder,
+  .form-field__user-email:-ms-input-placeholder,
+  .form-field__user-wishes:-ms-input-placeholder {
+    /* IE 10+ */
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #c7c7c7;
+
+    opacity: 1;
+  }
+
 
   .form-field__button {
     width: 230px;

@@ -23,6 +23,7 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media (min-width: 768px) {
@@ -59,16 +60,23 @@
     width: 668px;
     min-height: 145px;
     margin: auto;
+    padding: 0 50px;
   }
 }
 
 @media (min-width: 1150px) {
   .page-footer__wrapper {
-    width: 1050px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .page-footer__social {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  // .page-footer__logo {
+  //   width: 102px;
+  //   margin-right: 90px;
+  // }
 }

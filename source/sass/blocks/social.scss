@@ -10,22 +10,26 @@
   list-style: none;
 }
 
-
 .social__item {
   margin-right: 40px;
 }
 
-.social__item:nth-child(3n) {
+.social__item:last-child {
   margin-right: 0;
 }
 
+
 @media (min-width: 768px) {
   .social__list {
+    max-width: 700px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 73px;
+    padding-left: 82px;
   }
 
+  .social__item:last-child {
+    margin-right: 0;
+  }
 
   .social__link:hover .social__icon,
   .social__link:focus .social__icon {

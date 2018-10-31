@@ -50,7 +50,7 @@ gulp.task("images", function () { // уменьшить картинки
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({
-        optimizationLevel: 1
+        optimizationLevel: 3
       }),
       imagemin.jpegtran({
         progressive: true
@@ -89,7 +89,7 @@ gulp.task("html", function () {
 gulp.task("copy", function () { // перенос в папку build
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
+      // "source/img/**",
       "source/js/**",
       "source/**/*.html"
     ], {
@@ -106,6 +106,7 @@ gulp.task("build", gulp.series( // сборка
   "clean",
   "copy",
   "webp",
+  "images",
   "css",
   "sprite",
   "html",

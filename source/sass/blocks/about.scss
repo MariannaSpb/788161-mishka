@@ -136,7 +136,7 @@
 
   .about__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     min-height: 465px;
   }
 
@@ -151,7 +151,8 @@
 
   .about__item {
     width: 334px;
-    padding-top: 85px;
+    margin-bottom: 30px;
+    padding-top: 82px;
 
     font-size: 20px;
     line-height: 22px;
@@ -161,7 +162,8 @@
 
 @media (min-width: 1150px) {
   .about__title {
-    padding-left: 175px;
+    margin-bottom: 17px;
+    padding-left: 225px;
 
     font-size: 53px;
     line-height: 57px;
@@ -177,7 +179,7 @@
   }
 
   .about {
-    margin-bottom: 61px;
+    margin-bottom: 54px;
     padding: 0;
     padding-top: 53px;
   }

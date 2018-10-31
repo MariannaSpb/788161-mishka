@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
 
-  // width: 320px;
   margin: 0 auto;
 
   font-family: inherit;
@@ -41,11 +40,6 @@
   .page-header__button-humburger {
     display: none;
   }
-
-  .page-header {
-    // width: 768px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 1150px) {
@@ -62,11 +56,6 @@
     margin: 0;
     padding-top: 8px;
     padding-bottom: 8px;
-  }
-
-  .page-header {
-    // width: 1150px;
-    margin: 0 auto;
   }
 
 

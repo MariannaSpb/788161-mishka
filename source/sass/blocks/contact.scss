@@ -22,9 +22,7 @@
 }
 
 .contact__wrapper {
-  padding: 0 30px;
-  padding-top: 30px;
-  padding-bottom: 38px;
+  padding: 35px 30px 38px;
 }
 
 .contact__item {
@@ -99,7 +97,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 14px;
-    padding-top: 80px;
+    padding-top: 78px;
 
     background: url("../img/bg-zigzag-line.svg") repeat-x 100% 100% white;
     background-repeat: repeat-x;
@@ -192,7 +190,7 @@
     margin: 0;
     padding-top: 25px;
     padding-bottom: 40px;
-    padding-left: 175px;
+    padding-left: 224px;
   }
 
   .contact {
@@ -206,7 +204,7 @@
   }
 
   .contact__map {
-    width: 550px;
+    width: 525px;
   }
 
 
@@ -230,7 +228,7 @@
   .contact__write {
     width: 230px;
     margin-top: 39px;
-    margin-left: 175px;
+    margin-left: 225px;
   }
 
   .contact__wrapper {
@@ -239,7 +237,7 @@
 
   .contact__title {
     margin: 0;
-    padding-left: 169px;
+    padding-left: 220px;
 
     font-size: 53px;
     line-height: 57px;
@@ -247,7 +245,7 @@
 
   .contact__title::after {
     top: -9px;
-    left: 63px;
+    left: 113px;
   }
 
   .contact__email-link:hover {

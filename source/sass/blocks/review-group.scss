@@ -4,8 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
-  padding: 0 30px;
-  padding-bottom: 29px;
+  padding: 0 30px 23px;
 
   color: #000000;
 
@@ -41,6 +40,7 @@
     padding-right: 50px;
     padding-bottom: 113px;
     padding-left: 50px;
+    overflow: hidden;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -72,20 +72,18 @@
   }
 
   .review-group {
-    padding-top: 78px;
-    padding-right: 0;
-    padding-bottom: 161px;
-    padding-left: 0;
+    padding: 83px 52px 162px 49px;
+    overflow: hidden;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 52px 7px;
     background-size: 350px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-position: 0 0;
-      background-size: 350px;
+      background-position: 52px 7px;
+      background-size: 343px;
     }
   }
 }

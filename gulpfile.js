@@ -16,9 +16,6 @@ var posthtml = require("gulp-posthtml"); // шаблонизируем хтмл
 var include = require("posthtml-include"); // добавить в разметку
 var del = require("del"); // перед новой сборкой удалить build
 
-
-
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -60,7 +57,6 @@ gulp.task("images", function () { // уменьшить картинки
     .pipe(gulp.dest("build/img"));
 });
 
-
 gulp.task("webp", function () { // webp
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({
@@ -89,7 +85,6 @@ gulp.task("html", function () {
 gulp.task("copy", function () { // перенос в папку build
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      // "source/img/**",
       "source/js/**",
       "source/**/*.html"
     ], {

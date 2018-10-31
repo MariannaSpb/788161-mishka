@@ -31,7 +31,6 @@
   transform: translateX(50%) translateY(-50%);
 }
 
-
 .modal-window__title {
   width: 150px;
   margin: 0 auto;
@@ -43,7 +42,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 
 .modal-window__radio {
   display: none;
@@ -59,7 +57,6 @@
   line-height: 30px;
   color: #444444;
 }
-
 
 .modal-window__label,
 .modal-window__size-block {
@@ -102,6 +99,7 @@
   width: 260px;
   height: 52px;
   margin: 31px auto 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -154,10 +152,10 @@
     font-size: 17px;
   }
 
-
   @media (min-width: 1150px) {
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
   }
 }

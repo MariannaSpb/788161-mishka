@@ -8,9 +8,8 @@
   list-style: none;
 }
 
-
 .main-nav__list {
-  display: block;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -27,7 +26,7 @@
 }
 
 .main-nav__user-navigation {
-  display: block;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -59,7 +58,6 @@
   border-top: 1px solid #ececec;
 }
 
-
 .main-nav__delivery {
   display: none;
   margin: 0;
@@ -74,7 +72,6 @@
   fill: #d3d2d2;
 }
 
-
 .main-nav__icon-basket {
   position: absolute;
   top: 30px;
@@ -83,18 +80,15 @@
   fill: #d3d2d2;
 }
 
-
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__item {
     display: block;
   }
 }
 
-
 .page-header__button-humburger {
   display: none;
 }
-
 
 .main-nav--closed .page-header__button-humburger {
   position: absolute;
@@ -109,7 +103,6 @@
   cursor: pointer;
 }
 
-
 .main-nav--opened .page-header__button-humburger--close {
   position: absolute;
   top: 27px;
@@ -120,7 +113,6 @@
 
   background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
 }
-
 
 @media (min-width: 768px) {
   .main-nav {
@@ -220,13 +212,11 @@
   }
 }
 
-
 @media (min-width: 1150px) {
   .main-nav {
     justify-content: space-between;
     width: 1050px;
   }
-
 
   .main-nav__link[href]:hover {
     color: #666666;
@@ -262,7 +252,6 @@
     width: 374px;
   }
 
-
   .main-nav__list li:nth-child(1) {
     display: flex;
     align-items: center;
@@ -288,7 +277,6 @@
     font-size: 17px;
     line-height: 30px;
   }
-
 
   .main-nav__menu-offer li:nth-child(1) {
     margin-right: 24px;

@@ -2,13 +2,12 @@
 .form-field__user-email,
 .form-field__user-phone {
   flex-grow: 1;
-  height: 53px;
+  padding: 18px 5px 18px 0;
 
   border: none;
   border-bottom: 2px solid black;
   outline: 0;
 }
-
 
 .form-field__text::-webkit-input-placeholder,
 .form-field__user-phone::-webkit-input-placeholder,
@@ -36,19 +35,16 @@
   opacity: 1;
 }
 
-
 .form-field__text:-ms-input-placeholder,
 .form-field__user-phone:-ms-input-placeholder,
 .form-field__user-email:-ms-input-placeholder,
 .form-field__user-wishes:-ms-input-placeholder {
-  /* IE 10+ */
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #c7c7c7;
 }
-
 
 .form-field__input-wrap {
   position: relative;
@@ -61,7 +57,6 @@
 .form-field__email-image {
   fill: #c1c1c1;
 }
-
 
 .form-field__label {
   display: block;
@@ -117,7 +112,6 @@
   background-repeat: no-repeat;
 }
 
-
 .form-field__input--radio + .form-field__label::before {
   content: "";
 
@@ -134,7 +128,6 @@
   border-radius: 50%;
 }
 
-
 .form-field__input--radio:checked + label::after {
   content: "";
 
@@ -148,7 +141,6 @@
   background-color: #62d1ba;
   border-radius: 50%;
 }
-
 
 .form-field {
   position: relative;
@@ -208,7 +200,6 @@
   right: 9px;
 }
 
-
 @media (min-width: 768px) {
   .form-field {
     &--contact {
@@ -233,10 +224,7 @@
 
   .form-field__user-phone,
   .form-field__user-email {
-    // width: 487px;
-    margin-top: 5px;
-    padding-bottom: 0;
-    padding-left: 17px;
+    padding: 23px 7px 17px 18px;
 
     background-color: #f1f1f1;
   }
@@ -244,7 +232,7 @@
   .form-field__user-wishes {
     box-sizing: border-box;
     width: 500px;
-    min-height: 140px;
+    min-height: 142px;
   }
 
   .form-field--user-block {
@@ -270,7 +258,7 @@
   }
 
   .form-field__text {
-    padding-left: 17px;
+    padding: 18px 7px 13px 17px;
   }
 
 
@@ -294,7 +282,6 @@
   .form-field__label {
     display: flex;
     width: 260px;
-    // padding: 0;
 
     font-weight: 700;
     font-size: 19px;
@@ -310,7 +297,6 @@
     }
 
     &--radio {
-      // width: 349px;
       width: auto;
       margin-bottom: 28px;
       padding-left: 0;
@@ -339,7 +325,7 @@
 
   .form-field__phone-image {
     top: 21px;
-    right: 26px;
+    right: 23px;
   }
 
   .form-field__email-image {
@@ -350,7 +336,6 @@
   .form-block__legend::after {
     display: none;
   }
-
 
   .form-field__text::-webkit-input-placeholder,
   .form-field__user-phone::-webkit-input-placeholder,
@@ -377,12 +362,10 @@
     opacity: 1;
   }
 
-
   .form-field__text:-ms-input-placeholder,
   .form-field__user-phone:-ms-input-placeholder,
   .form-field__user-email:-ms-input-placeholder,
   .form-field__user-wishes:-ms-input-placeholder {
-    /* IE 10+ */
     font-weight: 400;
     font-size: 19px;
     line-height: 18px;
@@ -391,7 +374,6 @@
 
     opacity: 1;
   }
-
 
   .form-field__button {
     width: 230px;
@@ -443,18 +425,15 @@
     border-color: #c7c7c7;
   }
 
-
   .form-block--color:focus + .form-field__label::before,
   .form-block--type .form-field__label:hover::before,
   .form-block--type:focus + .form-field__label::before {
     border-color: #62d1ba;
   }
 
-
   .form-block--type .form-field__label:active::before {
     border-color: #c7c7c7;
   }
-
 
   .form-field__input--check:checked + label::after {
     top: 23%;
@@ -492,10 +471,8 @@
   .form-field__user-phone {
     box-sizing: border-box;
     width: 699px;
-    // padding-left: 12px;
-    padding: 16px 16px 16px 20px;
+    padding: 21px 16px 16px 20px;
   }
-
 
   .form-field__email-image {
     top: 17px;
@@ -512,7 +489,6 @@
     fill: #62d1ba;
   }
 
-
   .form-field__input-wrap:hover .form-field__phone-image,
   .form-field__input-wrap:hover .form-field__email-image,
   .form-field__input-wrap:focus .form-field__phone-image,
@@ -524,13 +500,11 @@
     width: 700px;
   }
 
-
   .form-field__user-wishes:hover,
   .form-field__user-wishes:active,
   .form-field__user-wishes:focus {
     box-shadow: inset 0 0 0 2px #76a199;
   }
-
 
   .form-field__label--text {
     width: auto;

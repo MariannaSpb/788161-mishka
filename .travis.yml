@@ -7,7 +7,7 @@ node_js:
 # notifications:
 #   email: false
 
-  before_deploy:
+before_deploy:
   - npm run build
   - echo -e "node_modules\npackage-lock.json" > .gitignore
 
@@ -19,4 +19,3 @@ deploy:
   local-dir: build
   on:
     branch: master
-
